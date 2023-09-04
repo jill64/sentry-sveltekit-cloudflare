@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1",
+    "@sentry/vite-plugin": "^2.7.0",
     "@sveltejs/adapter-cloudflare": "^2.3.3",
     "@sveltejs/package": "^2.2.2",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -50,7 +51,6 @@
     "@sentry/core": "^7.66.0",
     "@sentry/svelte": "^7.66.0",
     "@sentry/utils": "^7.66.0",
-    "@sentry/vite-plugin": "^2.7.0",
     "@sveltejs/kit": "^1.24.0",
     "esm-env": "^1.0.0",
     "toucan-js": "^2.7.0"
