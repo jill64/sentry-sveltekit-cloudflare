@@ -21,3 +21,4 @@ jobs:
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          PUBLIC_SENTRY_DSN: ${{secrets.PUBLIC_SENTRY_DSN}}
