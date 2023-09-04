@@ -5,7 +5,7 @@ const routes = [
   '/throw/layout/load',
   '/throw/layout/server-load',
   '/csr',
-  '/pre-rendered',
+  '/ssg',
   '/redirect-server'
 ]
 
