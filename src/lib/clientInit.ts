@@ -8,18 +8,20 @@ const defaultErrorHandler: HandleClientError = ({ error }) => {
 }
 
 export const clientInit = (
-  sentryOptions: Sentry.BrowserOptions,
+  dsn: string,
   options?: {
+    sentryOptions?: Sentry.BrowserOptions
     enableInDevMode?: boolean
   }
 ) => {
-  const { enableInDevMode } = options ?? {}
+  const { sentryOptions, enableInDevMode } = options ?? {}
 
   if (DEV && !enableInDevMode) {
     return (handleError = defaultErrorHandler) => handleError
   }
 
   Sentry.init({
+    dsn,
     tracesSampleRate: 1.0,
     replaysSessionSampleRate: 0.1,
     replaysOnErrorSampleRate: 1.0,

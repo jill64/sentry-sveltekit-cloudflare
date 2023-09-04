@@ -29,7 +29,6 @@ const Toucan = x as typeof TT.default
 
 const initSentry = (request: Request, additionalOptions?: Partial<Options>) => {
   const sentry = new Toucan({
-    dsn: process.env.SENTRY_DSN,
     request,
     allowedHeaders: [
       'user-agent',
@@ -45,12 +44,6 @@ const initSentry = (request: Request, additionalOptions?: Partial<Options>) => {
     allowedSearchParams: /(.*)/,
     rewriteFrames: {
       root: '/'
-    },
-    transportOptions: {
-      headers: {
-        'CF-Access-Client-ID': process.env.SENTRY_CLIENT_ID ?? '',
-        'CF-Access-Client-Secret': process.env.SENTRY_CLIENT_SECRET ?? ''
-      }
     },
     ...additionalOptions
   })
@@ -224,15 +217,19 @@ const instrumentHandle = (arg: {
   )
 }
 
-const makeHandler = (arg?: {
-  toucanOptions?: Partial<Options>
-  handleOptions?: SentryHandleOptions
-}) => {
+const makeHandler = (
+  dsn: string,
+  arg?: {
+    toucanOptions?: Partial<Options>
+    handleOptions?: SentryHandleOptions
+  }
+) => {
   const { handleOptions, toucanOptions } = arg ?? {}
 
   const init = (event: RequestEvent) =>
     initSentry(event.request, {
       tracesSampleRate: 1.0,
+      dsn,
       ...toucanOptions
     })
 
@@ -267,11 +264,14 @@ const makeHandler = (arg?: {
   }
 }
 
-export const serverInit = (options?: {
-  toucanOptions?: Partial<Options>
-  handleOptions?: SentryHandleOptions
-  enableInDevMode?: boolean
-}) => {
+export const serverInit = (
+  dsn: string,
+  options?: {
+    toucanOptions?: Partial<Options>
+    handleOptions?: SentryHandleOptions
+    enableInDevMode?: boolean
+  }
+) => {
   const { enableInDevMode } = options ?? {}
 
   if (DEV && !enableInDevMode) {
@@ -281,5 +281,5 @@ export const serverInit = (options?: {
     }
   }
 
-  return makeHandler(options)
+  return makeHandler(dsn, options)
 }

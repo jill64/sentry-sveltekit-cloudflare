@@ -17,12 +17,12 @@ npm i -D @jill64/sentry-sveltekit-cloudflare
 import { clientInit } from '@jill64/sentry-sveltekit-cloudflare'
 
 const onError = clientInit(
-  {
-    dsn: '__YOUR_DSN__'
-    // ... Other Sentry Config
-  }
+  '__YOUR_SENTRY_DSN__'
   // ,
   // {
+  //   sentryOptions: {
+  //     // ... Other Sentry Config
+  //   },
   //   enableInDevMode: boolean (default: false)
   // }
 )
@@ -36,17 +36,19 @@ export const handleError = onError((e) => {
 // hooks.server.js
 import { serverInit } from '@jill64/sentry-sveltekit-cloudflare'
 
-const { onHandle, onError } = serverInit({
-  toucanOptions: {
-    dsn: '__YOUR_DSN__'
-    // ... Other Sentry Config
-  }
+const { onHandle, onError } = serverInit(
+  '__YOUR_SENTRY_DSN__'
   // ,
-  // handleOptions: {
-  //   handleUnknownRoutes: boolean (default: false)
-  // },
-  // enableInDevMode: boolean (default: false)
-})
+  // {
+  //   toucanOptions: {
+  //     // ... Other Sentry Config
+  //   },
+  //   handleOptions: {
+  //     handleUnknownRoutes: boolean (default: false)
+  //   },
+  //   enableInDevMode: boolean (default: false)
+  // }
+)
 
 export const handle = onHandle(({ event, resolve }) => {
   // Your Handle Code
@@ -57,7 +59,7 @@ export const handleError = onError((e) => {
 })
 ```
 
-## Configure Source Map
+## Configure Source Map (Optional)
 
 [@sentry/vite-plugin](https://npmjs.com/package/@sentry/vite-plugin)
 
