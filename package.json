@@ -1,5 +1,5 @@
 {
-  "name": "sentry-sveltekit-cloudflare",
+  "name": "@jill64/sentry-sveltekit-cloudflare",
   "version": "0.1.0",
   "description": "Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
