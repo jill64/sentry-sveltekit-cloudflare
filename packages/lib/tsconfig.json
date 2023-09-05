@@ -5,8 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "declaration": true,
-    "outDir": "build",
-    "declarationDir": "../../dist",
+    "outDir": "../../dist",
     "strict": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext"

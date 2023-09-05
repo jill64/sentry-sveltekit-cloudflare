@@ -1,11 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "build": "tsc && tsx scripts/build.ts",
+    "build": "tsc",
     "ci": "pnpm build"
-  },
-  "devDependencies": {
-    "esbuild": "^0.19.2",
-    "tsx": "^3.12.8"
   }
 }
