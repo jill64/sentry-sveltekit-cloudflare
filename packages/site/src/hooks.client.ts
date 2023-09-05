@@ -1,5 +1,5 @@
 import { PUBLIC_SENTRY_DSN } from '$env/static/public'
-import { clientInit } from '$lib/clientInit.js'
+import { clientInit } from '$dist/index.js'
 import { toast } from 'svelte-french-toast'
 
 const onError = clientInit(PUBLIC_SENTRY_DSN)
