@@ -17,9 +17,7 @@ jobs:
         with:
           version: latest
           run_install: true
-      - run: pnpm build
-        env:
-          PUBLIC_SENTRY_DSN: ${{secrets.PUBLIC_SENTRY_DSN}}
-      - run: npm publish --access=public
+      - run: cd packages/lib && pnpm build
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

@@ -13,5 +13,10 @@ export default defineConfig({
       authToken: process.env.SENTRY_AUTH_TOKEN
     }),
     sveltekit()
-  ]
+  ],
+  server: {
+    fs: {
+      allow: ['../../dist']
+    }
+  }
 })

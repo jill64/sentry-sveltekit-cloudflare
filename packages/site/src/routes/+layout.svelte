@@ -1,9 +1,12 @@
 <script lang="ts">
+  import { Toaster } from 'svelte-french-toast'
+
   export let data
 
   $: ({ title } = data)
 </script>
 
+<Toaster position="bottom-left" />
 <svelte:head>
   <title>{title}</title>
 </svelte:head>
