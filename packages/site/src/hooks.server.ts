@@ -1,7 +1,7 @@
 import { building, dev } from '$app/environment'
 import { PREVIEW_AUTH_TOKEN } from '$env/static/private'
 import { PUBLIC_SENTRY_DSN } from '$env/static/public'
-import { serverInit } from '$lib/index.js'
+import { serverInit } from '$dist/index.js'
 import { redirect } from '@sveltejs/kit'
 
 const { onHandle, onError } = serverInit(PUBLIC_SENTRY_DSN)
