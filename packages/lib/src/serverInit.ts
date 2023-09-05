@@ -20,12 +20,7 @@ import type {
 import { sequence } from '@sveltejs/kit/hooks'
 import { DEV } from 'esm-env'
 import type { Options } from 'toucan-js'
-
-import type TT from 'toucan-js'
-// @ts-expect-error - no types
-import x from 'toucan-js/dist/index.cjs.js'
-
-const Toucan = x as typeof TT.default
+import Toucan from 'toucan-js'
 
 const initSentry = (request: Request, additionalOptions?: Partial<Options>) => {
   const sentry = new Toucan({

@@ -7,7 +7,7 @@ Workaround until close [sentry-javascript/#8693](https://github.com/getsentry/se
 ## Install
 
 ```sh
-npm i -D @jill64/sentry-sveltekit-cloudflare
+npm i @jill64/sentry-sveltekit-cloudflare
 ```
 
 ## Usage
