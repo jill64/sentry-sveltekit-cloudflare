@@ -1,4 +1,10 @@
-import * as Sentry from '@sentry/svelte'
+import {
+  captureException,
+  init,
+  type BrowserOptions,
+  BrowserTracing,
+  Replay
+} from '@sentry/svelte'
 import { addExceptionMechanism } from '@sentry/utils'
 import type { HandleClientError } from '@sveltejs/kit'
 import { DEV } from 'esm-env'
@@ -10,7 +16,7 @@ const defaultErrorHandler: HandleClientError = ({ error }) => {
 export const clientInit = (
   dsn: string,
   options?: {
-    sentryOptions?: Sentry.BrowserOptions
+    sentryOptions?: BrowserOptions
     enableInDevMode?: boolean
   }
 ) => {
@@ -20,18 +26,18 @@ export const clientInit = (
     return (handleError = defaultErrorHandler) => handleError
   }
 
-  Sentry.init({
+  init({
     dsn,
     tracesSampleRate: 1.0,
     replaysSessionSampleRate: 0.1,
     replaysOnErrorSampleRate: 1.0,
-    integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+    integrations: [new BrowserTracing(), new Replay()],
     ...sentryOptions
   })
 
   return (handleError = defaultErrorHandler): HandleClientError =>
     (input) => {
-      Sentry.captureException(input.error, (scope) => {
+      captureException(input.error, (scope) => {
         scope.addEventProcessor((event) => {
           addExceptionMechanism(event, {
             type: 'sveltekit',
