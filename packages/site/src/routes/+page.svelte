@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores'
-  import { toast } from 'svelte-french-toast'
+  import { toast } from '@jill64/svelte-toast'
 
   export let data
 
@@ -19,7 +19,7 @@
 </ul>
 <button
   on:click={() => {
-    toast.error('Error from client')
+    $toast.error('Error from client')
     throw new Error('Error from client')
   }}
 >
@@ -35,8 +35,8 @@
       const text = await res.text()
 
       res.ok
-        ? toast.success(`${res.status} ${text}`)
-        : toast.error(`${res.status} ${text}`)
+        ? $toast.success(`${res.status} ${text}`)
+        : $toast.error(`${res.status} ${text}`)
     }}
   >
     {method}
