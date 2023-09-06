@@ -5,5 +5,6 @@ build({
   bundle: true,
   outfile: '../../dist/index.js',
   minify: true,
-  format: 'esm'
+  format: 'esm',
+  external: ['esm-env']
 })

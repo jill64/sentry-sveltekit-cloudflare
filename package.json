@@ -50,7 +50,9 @@
     "prettier": "^3.0.3",
     "prettier-plugin-svelte": "^3.0.3",
     "publint": "^0.2.2",
-    "typescript": "^5.2.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
     "@sentry/svelte": "^7.66.0",
     "@sentry/core": "^7.66.0",
     "@sentry/utils": "^7.66.0",
