@@ -42,3 +42,15 @@
     {method}
   </button>
 {/each}
+
+<style>
+  @media (prefers-color-scheme: dark) {
+    :global(body) {
+      background: #111;
+      color: #eee;
+    }
+    a {
+      color: #3442ac;
+    }
+  }
+</style>
