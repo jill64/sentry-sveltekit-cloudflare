@@ -33,8 +33,7 @@
     "test": "playwright test",
     "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint .",
     "format": "prettier --write . --plugin prettier-plugin-svelte .",
-    "setup": "corepack enable && corepack prepare pnpm@latest --activate",
-    "ci": "npm run setup && pnpm i && pnpm lint && pnpm run -r ci && publint"
+    "ci": "pnpm lint && pnpm run -r ci && publint"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^1.0.0"
