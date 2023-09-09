@@ -1,14 +1,11 @@
 import type { BrowserOptions } from '@sentry/svelte'
+import * as Sentry from '@sentry/svelte'
 import { addExceptionMechanism } from '@sentry/utils'
 import type { HandleClientError } from '@sveltejs/kit'
 import { DEV } from 'esm-env'
-import * as Sentry from '@sentry/svelte'
+import { defaultErrorHandler } from './defaultErrorHandler'
 
-const defaultErrorHandler: HandleClientError = ({ error }) => {
-  console.error(error)
-}
-
-export const clientInit = (
+export const init = (
   dsn: string,
   options?: {
     sentryOptions?: BrowserOptions
