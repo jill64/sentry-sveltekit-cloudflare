@@ -1,6 +1,6 @@
 import { isPrimitive } from '@sentry/utils'
 import type { Options } from 'toucan-js'
-import Toucan from 'toucan-js'
+import { Toucan, RewriteFrames } from 'toucan-js'
 
 export const initSentry = (
   request: Request,
@@ -8,21 +8,21 @@ export const initSentry = (
 ) => {
   const sentry = new Toucan({
     request,
-    allowedHeaders: [
-      'user-agent',
-      'cf-challenge',
-      'accept-encoding',
-      'accept-language',
-      'cf-ray',
-      'content-length',
-      'content-type',
-      'x-real-ip',
-      'host'
-    ],
-    allowedSearchParams: /(.*)/,
-    rewriteFrames: {
-      root: '/'
+    requestDataOptions: {
+      allowedHeaders: [
+        'user-agent',
+        'cf-challenge',
+        'accept-encoding',
+        'accept-language',
+        'cf-ray',
+        'content-length',
+        'content-type',
+        'x-real-ip',
+        'host'
+      ],
+      allowedSearchParams: /(.*)/
     },
+    integrations: [new RewriteFrames({ root: '/' })],
     ...additionalOptions
   })
 
