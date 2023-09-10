@@ -57,6 +57,6 @@
     "@sentry/utils": "^7.68.0",
     "@sveltejs/kit": "^1.24.1",
     "esm-env": "^1.0.0",
-    "toucan-js": "^2.7.0"
+    "toucan-js": "^3.2.3"
   }
 }
