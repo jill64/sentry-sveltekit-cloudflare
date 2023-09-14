@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
     "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "strict": true,
     "outDir": "build",
-    "declarationDir": "../../dist"
+    "declarationDir": "../../dist",
+    "lib": ["DOM", "ESNext"]
   },
   "include": ["src/**/*"]
 }
