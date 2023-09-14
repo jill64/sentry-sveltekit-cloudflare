@@ -4,7 +4,7 @@
     "ci": "pnpm build"
   },
   "devDependencies": {
-    "esbuild": "0.19.2",
+    "esbuild": "0.19.3",
     "tsx": "3.12.10"
   }
 }
