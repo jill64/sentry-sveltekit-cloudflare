@@ -36,9 +36,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: 6.7.2
         version: 6.7.2(eslint@8.49.0)(typescript@5.2.2)
-      dotenv:
-        specifier: 16.3.1
-        version: 16.3.1
       eslint:
         specifier: 8.49.0
         version: 8.49.0
@@ -84,9 +81,6 @@ importers:
       '@sveltejs/kit':
         specifier: 1.25.0
         version: 1.25.0(svelte@4.2.1)(vite@4.4.9)
-      dotenv:
-        specifier: 16.3.1
-        version: 16.3.1
       svelte:
         specifier: 4.2.1
         version: 4.2.1
