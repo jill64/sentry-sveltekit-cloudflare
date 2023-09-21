@@ -5,5 +5,7 @@ export default defineConfig({
     baseURL: 'https://dev.sentry-sveltekit-cloudflare.pages.dev'
   },
   testDir: 'tests',
-  testMatch: /(.+\.)?(test|spec)\.[jt]s/
+  testMatch: /(.+\.)?(test|spec)\.[jt]s/,
+  fullyParallel: true,
+  workers: '100%'
 })
