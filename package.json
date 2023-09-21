@@ -30,10 +30,12 @@
     "access": "public"
   },
   "scripts": {
-    "test": "playwright test",
+    "build": "pnpm build:lib && pnpm build:site && publint",
+    "build:lib": "cd packages/lib && pnpm build",
+    "build:site": "cd packages/site && pnpm build",
     "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint .",
     "format": "prettier --write . --plugin prettier-plugin-svelte .",
-    "ci": "pnpm lint && pnpm run -r ci && publint"
+    "check": "cd packages/site && pnpm check"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^1.0.0"
@@ -42,7 +44,6 @@
     "@playwright/test": "1.38.0",
     "@typescript-eslint/eslint-plugin": "6.7.2",
     "@typescript-eslint/parser": "6.7.2",
-    "dotenv": "16.3.1",
     "eslint": "8.49.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-svelte": "2.33.2",

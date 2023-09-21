@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "build": "tsc && tsx scripts/build.ts",
-    "ci": "pnpm build"
+    "build": "tsc && tsx scripts/build.ts"
   },
   "devDependencies": {
     "esbuild": "0.19.3",
