@@ -1,5 +1,7 @@
 # sentry-sveltekit-cloudflare
 
+![github-actions-ci](https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml/badge.svg)
+
 Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
 
 Workaround until close [sentry-javascript/#8693](https://github.com/getsentry/sentry-javascript/issues/8693)
