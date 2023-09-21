@@ -13,6 +13,7 @@ test('SPA', async ({ page }) => {
 })
 
 test('CSR', async ({ page }) => {
+  await page.goto('/')
   await page.goto('/csr')
   await expect(page.getByRole('heading', { name: 'CSR' })).toBeVisible()
 })
