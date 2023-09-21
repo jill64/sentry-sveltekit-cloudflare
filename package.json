@@ -30,10 +30,12 @@
     "access": "public"
   },
   "scripts": {
-    "test": "playwright test",
+    "build": "pnpm build:lib && pnpm build:site && publint",
+    "build:lib": "cd packages/lib && pnpm build",
+    "build:site": "cd packages/site && pnpm build",
     "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint .",
     "format": "prettier --write . --plugin prettier-plugin-svelte .",
-    "ci": "pnpm lint && pnpm run -r ci && publint"
+    "check": "cd packages/site && pnpm check"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^1.0.0"

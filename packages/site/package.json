@@ -4,8 +4,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "pnpm build && vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "ci": "pnpm check && pnpm build"
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
     "@jill64/svelte-toast": "0.1.0",
