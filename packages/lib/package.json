@@ -4,6 +4,6 @@
   },
   "devDependencies": {
     "esbuild": "0.19.3",
-    "tsx": "3.12.10"
+    "tsx": "3.13.0"
   }
 }
