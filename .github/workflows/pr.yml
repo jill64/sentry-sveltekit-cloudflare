@@ -2,11 +2,11 @@ name: PR
 
 on:
   pull_request:
-    branches:
-      - main
+    branches: main
 
 jobs:
   e2e-test:
     uses: jill64/workflows/.github/workflows/run-playwright.yml@main
-  auto-merge:
-    uses: jill64/workflows/.github/workflows/auto-merge.yml@main
+  version-bump:
+    uses: jill64/workflows/.github/workflows/version-bump.yml@main
+    secrets: inherit
