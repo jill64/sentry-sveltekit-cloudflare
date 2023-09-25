@@ -8,5 +8,5 @@ jobs:
   release:
     uses: jill64/workflows/.github/workflows/release.yml@main
     with:
-      pre-publish: pnpm build:adapter
+      pre-publish: pnpm build:lib
     secrets: inherit
