@@ -3,7 +3,7 @@
     "build": "tsc && tsx scripts/build.ts"
   },
   "devDependencies": {
-    "esbuild": "0.19.3",
+    "esbuild": "0.19.4",
     "tsx": "3.13.0"
   }
 }
