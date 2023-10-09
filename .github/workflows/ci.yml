@@ -3,11 +3,7 @@ name: CI
 on: push
 
 jobs:
-  list:
-    uses: jill64/workflows/.github/workflows/lint.yml@main
-    secrets: inherit
   check:
     uses: jill64/workflows/.github/workflows/check.yml@main
     with:
-      pre-check: pnpm build:lib
-      check-command: export PUBLIC_SENTRY_DSN= && pnpm check
+      check-command: pnpm build:lib && export PUBLIC_SENTRY_DSN= && pnpm check
