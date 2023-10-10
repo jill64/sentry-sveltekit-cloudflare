@@ -1,6 +1,6 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
-  "version": "0.4.17",
+  "version": "0.4.18",
   "description": "Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
@@ -30,11 +30,11 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pnpm build:lib && pnpm build:site && publint",
+    "build": "pnpm build:lib && pnpm build:site && npx publint",
     "build:lib": "cd packages/lib && pnpm build",
     "build:site": "cd packages/site && pnpm build",
-    "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint .",
-    "format": "prettier --write . --plugin prettier-plugin-svelte .",
+    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint",
+    "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "check": "cd packages/site && pnpm check"
   },
   "peerDependencies": {
@@ -44,12 +44,9 @@
     "@playwright/test": "1.38.1",
     "@typescript-eslint/eslint-plugin": "6.7.4",
     "@typescript-eslint/parser": "6.7.4",
-    "eslint": "8.50.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-svelte": "2.34.0",
-    "prettier": "3.0.3",
     "prettier-plugin-svelte": "3.0.3",
-    "publint": "0.2.3",
     "typescript": "5.2.2"
   },
   "dependencies": {

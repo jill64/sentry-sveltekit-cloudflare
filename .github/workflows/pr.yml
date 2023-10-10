@@ -7,6 +7,3 @@ on:
 jobs:
   e2e-test:
     uses: jill64/workflows/.github/workflows/run-playwright.yml@main
-  version-bump:
-    uses: jill64/workflows/.github/workflows/version-bump.yml@main
-    secrets: inherit
