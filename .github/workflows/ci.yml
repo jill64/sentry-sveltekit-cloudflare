@@ -7,4 +7,3 @@ jobs:
     uses: jill64/workflows/.github/workflows/check.yml@main
     with:
       check-command: pnpm build:lib && export PUBLIC_SENTRY_DSN= && pnpm check
-
