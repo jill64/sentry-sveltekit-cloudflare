@@ -53,7 +53,7 @@
     "@sentry/core": "7.73.0",
     "@sentry/svelte": "7.73.0",
     "@sentry/utils": "7.73.0",
-    "@sveltejs/kit": "1.25.1",
+    "@sveltejs/kit": "1.25.2",
     "esm-env": "1.0.0",
     "toucan-js": "3.3.0"
   }
