@@ -5,4 +5,3 @@ dist
 .svelte-kit
 .env
 package-lock.json
-pnpm-lock.yaml
