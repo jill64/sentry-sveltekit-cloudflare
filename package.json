@@ -1,6 +1,6 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
-  "version": "0.4.23",
+  "version": "0.4.24",
   "description": "Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
@@ -33,6 +33,7 @@
     "build": "pnpm build:lib && pnpm build:site && npx publint",
     "build:lib": "cd packages/lib && pnpm build",
     "build:site": "cd packages/site && pnpm build",
+    "prepack": "pnpm build:lib",
     "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "check": "cd packages/site && pnpm check"
