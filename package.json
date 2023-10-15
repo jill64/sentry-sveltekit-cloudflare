@@ -34,9 +34,9 @@
     "build:lib": "cd packages/lib && pnpm build",
     "build:site": "cd packages/site && pnpm build",
     "prepack": "pnpm build:lib",
-    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint",
+    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint && pnpm check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
-    "check": "cd packages/site && pnpm check"
+    "check": "pnpm build:lib && export PUBLIC_SENTRY_DSN= && cd packages/site && pnpm check"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^1.0.0"
