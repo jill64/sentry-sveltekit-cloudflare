@@ -1,9 +1,9 @@
-name: PR
+name: Integration
 
 on:
   pull_request:
     branches: main
 
 jobs:
-  e2e-test:
+  integration:
     uses: jill64/workflows/.github/workflows/run-playwright.yml@main
