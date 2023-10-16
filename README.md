@@ -1,6 +1,6 @@
 # sentry-sveltekit-cloudflare
 
-![github-actions-ci](https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml/badge.svg)
+[![npm](https://img.shields.io/npm/v/%40jill64%2Fsentry-sveltekit-cloudflare)](https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare)
 
 Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
 
