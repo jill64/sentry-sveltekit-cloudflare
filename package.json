@@ -1,6 +1,6 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
-  "version": "0.4.31",
+  "version": "0.4.32",
   "description": "Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
@@ -52,9 +52,9 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "@sentry/core": "7.74.0",
-    "@sentry/svelte": "7.74.0",
-    "@sentry/utils": "7.74.0",
+    "@sentry/core": "7.74.1",
+    "@sentry/svelte": "7.74.1",
+    "@sentry/utils": "7.74.1",
     "@sveltejs/kit": "1.25.2",
     "esm-env": "1.0.0",
     "toucan-js": "3.3.0"
