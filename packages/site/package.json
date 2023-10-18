@@ -10,7 +10,7 @@
     "@jill64/svelte-toast": "0.1.22",
     "@sentry/vite-plugin": "2.8.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
-    "@sveltejs/kit": "1.25.2",
+    "@sveltejs/kit": "1.26.0",
     "svelte": "4.2.1",
     "tslib": "2.6.2",
     "vite": "4.5.0"
