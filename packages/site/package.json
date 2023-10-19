@@ -7,7 +7,7 @@
     "check": "svelte-kit sync && npx svelte-check"
   },
   "devDependencies": {
-    "@jill64/svelte-toast": "0.1.23",
+    "@jill64/svelte-toast": "0.1.24",
     "@sentry/vite-plugin": "2.8.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "@sveltejs/kit": "1.26.0",
