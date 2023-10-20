@@ -4,7 +4,7 @@
 
 Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
 
-Workaround until close [sentry-javascript/#8693](https://github.com/getsentry/sentry-javascript/issues/8693)
+Workaround until close [@sentry/javascript #8291](https://github.com/getsentry/sentry-javascript/issues/8291)
 
 ## Install
 
