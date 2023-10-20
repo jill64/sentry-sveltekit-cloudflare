@@ -18,16 +18,16 @@ Add the following settings to your SvelteKit application's vite.config.js.
 
 ```js
 // vite.config.js
-import { sveltekit } from "@sveltejs/kit/vite";
-import { defineConfig } from "vite";
+import { sveltekit } from '@sveltejs/kit/vite'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [sveltekit()],
   ssr: {
-    noExternal: ["@jill64/sentry-sveltekit-cloudflare"],
-  },
-  // ... 
-});
+    noExternal: ['@jill64/sentry-sveltekit-cloudflare']
+  }
+  // ...
+})
 ```
 
 ## Usage
