@@ -30,6 +30,9 @@ importers:
       '@playwright/test':
         specifier: 1.39.0
         version: 1.39.0
+      '@sentry/types':
+        specifier: ^7.74.1
+        version: 7.74.1
       '@typescript-eslint/eslint-plugin':
         specifier: 6.8.0
         version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
