@@ -6,5 +6,5 @@ build({
   outfile: '../../dist/index.js',
   minify: true,
   format: 'esm',
-  external: ['esm-env']
+  external: ['esm-env', '$app/stores']
 })
