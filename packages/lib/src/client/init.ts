@@ -4,6 +4,7 @@ import { addExceptionMechanism } from '@sentry/utils'
 import type { HandleClientError } from '@sveltejs/kit'
 import { DEV } from 'esm-env'
 import { defaultErrorHandler } from './defaultErrorHandler'
+import { sentryInit } from './sentryInit'
 
 export const init = (
   dsn: string,
@@ -18,12 +19,12 @@ export const init = (
     return (handleError = defaultErrorHandler) => handleError
   }
 
-  Sentry.init({
+  sentryInit({
     dsn,
     tracesSampleRate: 1.0,
     replaysSessionSampleRate: 0.1,
     replaysOnErrorSampleRate: 1.0,
-    integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+    integrations: [new Sentry.Replay()],
     ...sentryOptions
   })
 
