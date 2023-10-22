@@ -61,8 +61,8 @@ importers:
   packages/site:
     devDependencies:
       '@jill64/svelte-toast':
-        specifier: 0.1.24
-        version: 0.1.24(svelte@4.2.2)
+        specifier: 0.1.25
+        version: 0.1.25(svelte@4.2.2)
       '@sentry/vite-plugin':
         specifier: 2.8.0
         version: 2.8.0
@@ -559,20 +559,21 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@jill64/svelte-device-theme@1.0.12(svelte@4.2.2):
-    resolution: {integrity: sha512-B5AhibtgU/RqGKhvGhQ9IU8D62r8A8yiTvuQCkhza3pKb5Pdq9opQYZUOQDknPa6A22P1l8wGt49cMe+3EMtIw==}
+  /@jill64/svelte-device-theme@1.1.1(svelte@4.2.2):
+    resolution: {integrity: sha512-z4d71iOQW7HEvgKmBmz1YquS9GfFMb/xV9djA3kv7/LiXOZ4/EbY5g1u1BWBHyGgOoBm7weXfduXqxGLt3Ks+A==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
+      esm-env: 1.0.0
       svelte: 4.2.2
     dev: true
 
-  /@jill64/svelte-toast@0.1.24(svelte@4.2.2):
-    resolution: {integrity: sha512-m9GMZAaWT7nMLnv98AVlX206EM4I81W89Glo/wN2gPxY7ZyF2xNE66FPEfYCjRc6SpNz8ShRwuqO4lWZn5p8EQ==}
+  /@jill64/svelte-toast@0.1.25(svelte@4.2.2):
+    resolution: {integrity: sha512-cPwLdV8MD/hZHmqVp3ogtiyEgZu1ltbzihTi7UxccsIpCxzGrZ4vzIxUc5KQdpkLmKCMHcgu0owEX7+P+/xyQg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-device-theme': 1.0.12(svelte@4.2.2)
+      '@jill64/svelte-device-theme': 1.1.1(svelte@4.2.2)
       svelte: 4.2.2
       svelte-french-toast: 1.2.0(svelte@4.2.2)
     dev: true
