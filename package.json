@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.39.0",
-    "@sentry/types": "^7.74.1",
+    "@sentry/types": "7.74.1",
     "@typescript-eslint/eslint-plugin": "6.8.0",
     "@typescript-eslint/parser": "6.8.0",
     "eslint-config-prettier": "9.0.0",
