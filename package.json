@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.39.0",
-    "@sentry/types": "7.74.1",
+    "@sentry/types": "7.75.0",
     "@typescript-eslint/eslint-plugin": "6.9.0",
     "@typescript-eslint/parser": "6.9.0",
     "eslint-config-prettier": "9.0.0",
@@ -54,9 +54,9 @@
     "eslint-plugin-deprecation": "2.0.0",
     "prettier-plugin-svelte": "3.0.3",
     "typescript": "5.2.2",
-    "@sentry/core": "7.74.1",
-    "@sentry/svelte": "7.74.1",
-    "@sentry/utils": "7.74.1",
+    "@sentry/core": "7.75.0",
+    "@sentry/svelte": "7.75.0",
+    "@sentry/utils": "7.75.0",
     "@sveltejs/kit": "1.27.0",
     "toucan-js": "3.3.0"
   },
