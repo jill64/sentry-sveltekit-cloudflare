@@ -37,7 +37,7 @@
     "preview": "pnpm build:lib && cd packages/site && pnpm preview",
     "prepack": "pnpm build:lib",
     "test:e2e": "npx playwright install && playwright test",
-    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint && pnpm check",
+    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint . && pnpm check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "check": "pnpm build:lib && export PUBLIC_SENTRY_DSN= && cd packages/site && pnpm check"
   },
@@ -51,6 +51,7 @@
     "@typescript-eslint/parser": "6.9.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-svelte": "2.34.0",
+    "eslint-plugin-deprecation": "2.0.0",
     "prettier-plugin-svelte": "3.0.3",
     "typescript": "5.2.2",
     "@sentry/core": "7.74.1",
