@@ -57,7 +57,7 @@
     "@sentry/core": "7.75.1",
     "@sentry/svelte": "7.75.1",
     "@sentry/utils": "7.75.1",
-    "@sveltejs/kit": "1.27.0",
+    "@sveltejs/kit": "1.27.1",
     "toucan-js": "3.3.0"
   },
   "dependencies": {
