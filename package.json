@@ -36,7 +36,7 @@
     "build:site": "cd packages/site && pnpm build",
     "preview": "pnpm build:lib && cd packages/site && pnpm preview",
     "prepack": "pnpm build:lib",
-    "test:e2e": "npx playwright install && playwright test",
+    "test": "playwright test",
     "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint . && pnpm check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "check": "pnpm build:lib && export PUBLIC_SENTRY_DSN= && cd packages/site && pnpm check"
