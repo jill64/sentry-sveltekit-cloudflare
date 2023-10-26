@@ -7,6 +7,7 @@ export default defineConfig({
   testDir: 'tests',
   fullyParallel: true,
   workers: '100%',
+  retries: process.env.CI ? 2 : 0,
   projects: [
     {
       name: 'chromium',
