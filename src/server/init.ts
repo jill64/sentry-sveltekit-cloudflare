@@ -1,9 +1,9 @@
 import { DEV } from 'esm-env'
 import type { Options } from 'toucan-js'
-import { makeHandler } from './makeHandler'
-import { SentryHandleOptions } from './types/SentryHandleOptions'
-import { defaultErrorHandler } from './util/defaultErrorHandler'
-import { defaultHandler } from './util/defaultHandler'
+import { makeHandler } from './makeHandler.js'
+import { SentryHandleOptions } from './types/SentryHandleOptions.js'
+import { defaultErrorHandler } from './util/defaultErrorHandler.js'
+import { defaultHandler } from './util/defaultHandler.js'
 
 export const init = (
   dsn: string,
