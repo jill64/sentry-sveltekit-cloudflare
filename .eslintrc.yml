@@ -1,14 +1,10 @@
 extends:
-  - 'eslint:recommended'
-  - 'plugin:@typescript-eslint/recommended'
-  - 'plugin:svelte/recommended'
-  - prettier
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
 parserOptions:
   ecmaVersion: 2020
   sourceType: module
-  project: ./tsconfig.json
-  extraFileExtensions:
-    - .svelte
+  project: ./eslint.tsconfig.json
 plugins:
   - '@typescript-eslint'
   - deprecation
@@ -17,9 +13,3 @@ rules:
 env:
   browser: true
   node: true
-overrides:
-  - files:
-      - '*.svelte'
-    parser: svelte-eslint-parser
-    parserOptions:
-      parser: '@typescript-eslint/parser'
