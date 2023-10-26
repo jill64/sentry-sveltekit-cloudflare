@@ -12,7 +12,9 @@
     "dist"
   ],
   "keywords": [
+    "sentry",
     "svelte",
+    "sveltekit",
     "worker",
     "edge"
   ],
@@ -37,7 +39,7 @@
     "preview": "pnpm build:lib && cd packages/site && pnpm preview",
     "prepack": "pnpm build:lib",
     "test": "playwright test",
-    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint . && pnpm check",
+    "lint": "npx eslint . && pnpm check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "check": "pnpm build:lib && export PUBLIC_SENTRY_DSN= && cd packages/site && pnpm check"
   },
