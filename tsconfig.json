@@ -6,6 +6,7 @@
     "declarationDir": "dist",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "skipLibCheck": true
   },
   "include": ["src"]
 }

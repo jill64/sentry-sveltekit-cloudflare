@@ -51,17 +51,18 @@
   },
   "devDependencies": {
     "@playwright/test": "1.39.0",
-    "@sentry/types": "7.75.1",
-    "@typescript-eslint/eslint-plugin": "6.9.0",
-    "@typescript-eslint/parser": "6.9.0",
-    "eslint-plugin-deprecation": "2.0.0",
-    "typescript": "5.2.2",
     "@sentry/core": "7.75.1",
-    "esbuild": "0.19.5",
     "@sentry/svelte": "7.75.1",
+    "@sentry/types": "7.75.1",
     "@sentry/utils": "7.75.1",
     "@sveltejs/kit": "1.27.1",
-    "toucan-js": "3.3.0"
+    "@types/node": "20.8.9",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",
+    "esbuild": "0.19.5",
+    "eslint-plugin-deprecation": "2.0.0",
+    "toucan-js": "3.3.0",
+    "typescript": "5.2.2"
   },
   "dependencies": {
     "esm-env": "1.0.0"
