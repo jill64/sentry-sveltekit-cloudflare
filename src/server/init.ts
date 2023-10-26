@@ -6,10 +6,28 @@ import { defaultErrorHandler } from './util/defaultErrorHandler.js'
 import { defaultHandler } from './util/defaultHandler.js'
 
 export const init = (
+  /**
+   * Sentry DSN
+   * @see https://docs.sentry.io/product/sentry-basics/dsn-explainer/
+   */
   dsn: string,
+  /**
+   * Server Init Options
+   */
   options?: {
+    /**
+     * Toucan Options
+     * @see https://github.com/robertcepa/toucan-js/blob/master/packages/toucan-js/src/types.ts
+     */
     toucanOptions?: Partial<Options>
+    /**
+     * Sentry Handle Options
+     */
     handleOptions?: SentryHandleOptions
+    /**
+     * Enable in dev mode
+     * @default false
+     */
     enableInDevMode?: boolean
   }
 ) => {
