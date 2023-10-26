@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "build": "tsc && npx tsx scripts/build.ts"
-  },
-  "devDependencies": {
-    "esbuild": "0.19.5"
-  }
-}

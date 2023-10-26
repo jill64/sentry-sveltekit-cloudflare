@@ -7,7 +7,7 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-      $dist: '../../dist'
+      $dist: '../dist'
     }
   }
 }

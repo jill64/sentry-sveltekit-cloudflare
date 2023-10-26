@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
     "strict": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist",
     "module": "NodeNext",
-    "moduleResolution": "NodeNext"
-  }
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true
+  },
+  "include": ["src"]
 }

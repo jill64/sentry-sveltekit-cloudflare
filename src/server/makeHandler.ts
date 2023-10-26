@@ -2,11 +2,11 @@ import { getCurrentHub, runWithAsyncContext } from '@sentry/core'
 import type { Handle, HandleServerError, RequestEvent } from '@sveltejs/kit'
 import { sequence } from '@sveltejs/kit/hooks'
 import type { Options } from 'toucan-js'
-import { initSentry } from './initSentry'
-import { instrumentHandle } from './instrumentHandle'
-import { SentryHandleOptions } from './types/SentryHandleOptions'
-import { defaultErrorHandler } from './util/defaultErrorHandler'
-import { isNotFoundError } from './util/isNotFoundError'
+import { initSentry } from './initSentry.js'
+import { instrumentHandle } from './instrumentHandle.js'
+import { SentryHandleOptions } from './types/SentryHandleOptions.js'
+import { defaultErrorHandler } from './util/defaultErrorHandler.js'
+import { isNotFoundError } from './util/isNotFoundError.js'
 
 export const makeHandler = (
   dsn: string,

@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   server: {
     fs: {
-      allow: ['../../dist']
+      allow: ['../dist']
     }
   }
 })
