@@ -61,7 +61,7 @@
     "@typescript-eslint/parser": "6.9.0",
     "esbuild": "0.19.5",
     "eslint-plugin-deprecation": "2.0.0",
-    "toucan-js": "3.3.0",
+    "toucan-js": "3.3.1",
     "typescript": "5.2.2"
   },
   "dependencies": {
