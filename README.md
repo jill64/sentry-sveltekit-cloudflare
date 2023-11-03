@@ -10,12 +10,6 @@ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
 
 Workaround until close [@sentry/javascript #8291](https://github.com/getsentry/sentry-javascript/issues/8291)
 
-## Install
-
-```sh
-npm i @jill64/sentry-sveltekit-cloudflare
-```
-
 ## Configuration
 
 Add the following settings to your SvelteKit application's `vite.config.js`.
