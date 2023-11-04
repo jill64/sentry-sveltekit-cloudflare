@@ -4,7 +4,13 @@
 
 [![npm-version](https://img.shields.io/npm/v/@jill64/sentry-sveltekit-cloudflare)](https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare) [![npm-license](https://img.shields.io/npm/l/@jill64/sentry-sveltekit-cloudflare)](https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/sentry-sveltekit-cloudflare)](https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/sentry-sveltekit-cloudflare)](https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare) [![ci.yml](https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml)
 
-Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
+♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
+
+## Install
+
+```sh
+npm i @jill64/sentry-sveltekit-cloudflare
+```
 
 <!----- END GHOST DOCS HEADER ----->
 
