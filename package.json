@@ -1,7 +1,7 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
   "version": "1.0.0",
-  "description": "Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
+  "description": "♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
