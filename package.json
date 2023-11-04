@@ -9,14 +9,13 @@
   "bugs": "https://github.com/jill64/sentry-sveltekit-cloudflare/issues",
   "homepage": "https://github.com/jill64/sentry-sveltekit-cloudflare#readme",
   "files": [
-    "dist"
+    "dist",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "keywords": [
-    "sentry",
-    "svelte",
-    "sveltekit",
-    "worker",
-    "edge"
+    "cloudflare",
+    "svelte"
   ],
   "repository": {
     "type": "git",
