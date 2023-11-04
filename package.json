@@ -15,7 +15,10 @@
   ],
   "keywords": [
     "cloudflare",
-    "svelte"
+    "edge",
+    "sentry",
+    "svelte",
+    "worker"
   ],
   "repository": {
     "type": "git",
