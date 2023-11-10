@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@jill64/svelte-toast": "1.0.1",
-    "@sentry/vite-plugin": "2.9.0",
+    "@sentry/vite-plugin": "2.10.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-svelte": "2.35.0",
