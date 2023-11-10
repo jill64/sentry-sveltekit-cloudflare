@@ -57,7 +57,7 @@
     "@sentry/svelte": "7.80.0",
     "@sentry/types": "7.80.0",
     "@sentry/utils": "7.80.0",
-    "@sveltejs/kit": "1.27.3",
+    "@sveltejs/kit": "1.27.4",
     "@types/node": "20.9.0",
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.10.0",
