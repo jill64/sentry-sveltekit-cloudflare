@@ -35,7 +35,7 @@
   },
   "scripts": {
     "dev": "cd demo && npm run dev",
-    "build:pages": "npm run build:lib && npm run build:demo && npx publint",
+    "build": "npm run build:lib && npm run build:demo && npx publint",
     "build:lib": "tsc && npx tsx scripts/build.ts",
     "build:demo": "cd demo && npm run build",
     "preview": "npm run build:lib && cd demo && npm run preview",
