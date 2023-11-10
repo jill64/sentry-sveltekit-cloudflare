@@ -1,6 +1,0 @@
-branch-protection:
-  main:
-    required_status_checks:
-      contexts:
-        - Cloudflare Pages
-        - e2e-test / run-playwright

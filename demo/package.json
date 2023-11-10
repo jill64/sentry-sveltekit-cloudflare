@@ -4,9 +4,9 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "npm run build && vite preview",
-    "lint": "npx eslint . && npm run check",
+    "lint": "npm run check && npx eslint .",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
-    "check": "export PUBLIC_SENTRY_DSN= && svelte-kit sync && npx svelte-check"
+    "check": "svelte-kit sync && npx svelte-check"
   },
   "devDependencies": {
     "@jill64/svelte-toast": "1.0.1",
