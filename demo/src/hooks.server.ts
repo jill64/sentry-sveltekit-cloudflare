@@ -1,7 +1,8 @@
 import { serverInit } from '$dist/index.js'
-import { PUBLIC_SENTRY_DSN } from '$env/static/public'
 
-const { onHandle, onError } = serverInit(PUBLIC_SENTRY_DSN)
+const { onHandle, onError } = serverInit(
+  'https://7e30b84f392c05d4a9a21e30f3ef6801@o4505814639312896.ingest.sentry.io/4505817123323904'
+)
 
 export const handle = onHandle(({ event, resolve }) => {
   console.log(`${event.request.method} ${event.url.pathname}`)
