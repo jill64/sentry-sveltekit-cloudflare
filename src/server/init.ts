@@ -1,4 +1,4 @@
-import { DEV } from 'esm-env'
+import { dev } from '$app/environment'
 import type { Options } from 'toucan-js'
 import { makeHandler } from './makeHandler.js'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
@@ -33,7 +33,7 @@ export const init = (
 ) => {
   const { enableInDevMode } = options ?? {}
 
-  if (DEV && !enableInDevMode) {
+  if (dev && !enableInDevMode) {
     return {
       onHandle: (handle = defaultHandler) => handle,
       onError: (handleError = defaultErrorHandler) => handleError
