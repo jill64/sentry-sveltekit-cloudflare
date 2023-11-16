@@ -6,5 +6,5 @@ build({
   outfile: 'dist/index.js',
   minify: true,
   format: 'esm',
-  external: ['$app/*']
+  external: ['$app/*', 'toucan-js']
 })

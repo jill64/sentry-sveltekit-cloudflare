@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      toucan-js:
+        specifier: 3.3.1
+        version: 3.3.1
     devDependencies:
       '@playwright/test':
         specifier: 1.39.0
@@ -41,9 +45,6 @@ importers:
       eslint-plugin-deprecation:
         specifier: 2.0.0
         version: 2.0.0(eslint@8.52.0)(typescript@5.2.2)
-      toucan-js:
-        specifier: 3.3.1
-        version: 3.3.1
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -808,7 +809,7 @@ packages:
     dependencies:
       '@sentry/types': 7.76.0
       '@sentry/utils': 7.76.0
-    dev: true
+    dev: false
 
   /@sentry/core@7.80.1:
     resolution: {integrity: sha512-3Yh+O9Q86MxwIuJFYtuSSoUCpdx99P1xDAqL0FIPTJ+ekaVMiUJq9NmyaNh9uN2myPSmxvEXW6q3z37zta9ZHg==}
@@ -826,7 +827,7 @@ packages:
       '@sentry/types': 7.76.0
       '@sentry/utils': 7.76.0
       localforage: 1.10.0
-    dev: true
+    dev: false
 
   /@sentry/node@7.74.1:
     resolution: {integrity: sha512-aMUQ2LFZF64FBr+cgjAqjT4OkpYBIC9lyWI8QqjEHqNho5+LGu18/iVrJPD4fgs4UhGdCuAiQjpC36MbmnIDZA==}
@@ -875,7 +876,7 @@ packages:
   /@sentry/types@7.76.0:
     resolution: {integrity: sha512-vj6z+EAbVrKAXmJPxSv/clpwS9QjPqzkraMFk2hIdE/kii8s8kwnkBwTSpIrNc8GnzV3qYC4r3qD+BXDxAGPaw==}
     engines: {node: '>=8'}
-    dev: true
+    dev: false
 
   /@sentry/types@7.80.1:
     resolution: {integrity: sha512-CVu4uPVTOI3U9kYiOdA085R7jX5H1oVODbs9y+A8opJ0dtJTMueCXgZyE8oXQ0NjGVs6HEeaLkOuiV0mj8X3yw==}
@@ -895,7 +896,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       '@sentry/types': 7.76.0
-    dev: true
+    dev: false
 
   /@sentry/utils@7.80.1:
     resolution: {integrity: sha512-bfFm2e/nEn+b9++QwjNEYCbS7EqmteT8uf0XUs7PljusSimIqqxDtK1pfD9zjynPgC8kW/fVBKv0pe2LufomeA==}
@@ -1906,7 +1907,7 @@ packages:
 
   /immediate@3.0.6:
     resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
-    dev: true
+    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -2017,7 +2018,7 @@ packages:
     resolution: {integrity: sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==}
     dependencies:
       immediate: 3.0.6
-    dev: true
+    dev: false
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -2028,7 +2029,7 @@ packages:
     resolution: {integrity: sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==}
     dependencies:
       lie: 3.1.1
-    dev: true
+    dev: false
 
   /locate-character@3.0.0:
     resolution: {integrity: sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA==}
@@ -2571,7 +2572,7 @@ packages:
       '@sentry/integrations': 7.76.0
       '@sentry/types': 7.76.0
       '@sentry/utils': 7.76.0
-    dev: true
+    dev: false
 
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
