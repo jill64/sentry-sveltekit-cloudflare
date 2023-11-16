@@ -2,7 +2,7 @@ import type { BrowserOptions } from '@sentry/svelte'
 import * as Sentry from '@sentry/svelte'
 import { addExceptionMechanism } from '@sentry/utils'
 import type { HandleClientError } from '@sveltejs/kit'
-import { DEV } from 'esm-env'
+import { dev } from '$app/environment'
 import { defaultErrorHandler } from './defaultErrorHandler.js'
 import { sentryInit } from './sentryInit.js'
 
@@ -30,7 +30,7 @@ export const init = (
 ) => {
   const { sentryOptions, enableInDevMode } = options ?? {}
 
-  if (DEV && !enableInDevMode) {
+  if (dev && !enableInDevMode) {
     return (handleError = defaultErrorHandler) => handleError
   }
 

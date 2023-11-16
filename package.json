@@ -1,6 +1,6 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
@@ -65,8 +65,5 @@
     "eslint-plugin-deprecation": "2.0.0",
     "toucan-js": "3.3.1",
     "typescript": "5.2.2"
-  },
-  "dependencies": {
-    "esm-env": "1.0.0"
   }
 }
