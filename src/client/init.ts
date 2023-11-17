@@ -1,5 +1,5 @@
 import { dev } from '$app/environment'
-import type { BrowserOptions } from '@sentry/svelte'
+import type { BrowserOptions } from '@sentry/sveltekit'
 import { HandleClientError } from '@sveltejs/kit'
 import * as Sentry from './sentry/index.js'
 import { handleErrorWithSentry } from './sentry/index.js'
