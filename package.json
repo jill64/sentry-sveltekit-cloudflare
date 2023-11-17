@@ -55,10 +55,8 @@
     "@playwright/test": "1.40.0",
     "@sentry/core": "7.80.1",
     "@sentry/svelte": "7.80.1",
-    "@sentry/types": "7.80.1",
     "@sentry/utils": "7.80.1",
     "@sveltejs/kit": "1.27.6",
-    "@types/node": "20.9.1",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.11.0",
     "esbuild": "0.19.5",
@@ -66,6 +64,7 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
+    "@sentry/sveltekit": "7.80.1",
     "toucan-js": "3.3.1"
   }
 }
