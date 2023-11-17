@@ -4,8 +4,7 @@ import type { Handle, RequestEvent } from '@sveltejs/kit'
 import { getTracePropagationData } from './getTracePropagationData.js'
 import { initSentry } from './initSentry.js'
 import { transformPageChunk } from './transformPageChunk.js'
-import { isHttpError } from './util/isHttpError.js'
-import { isRedirect } from './util/isRedirect.js'
+import { isHttpError, isRedirect } from './common/utils.js'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
 
 export const instrumentHandle = (arg: {
