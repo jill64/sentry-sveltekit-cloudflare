@@ -46,8 +46,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/svelte-toast':
-        specifier: 1.0.4
-        version: 1.0.4(svelte@4.2.5)
+        specifier: 1.0.5
+        version: 1.0.5(svelte@4.2.5)
       '@sentry/vite-plugin':
         specifier: 2.10.1
         version: 2.10.1
@@ -781,8 +781,8 @@ packages:
       svelte: 4.2.5
     dev: true
 
-  /@jill64/svelte-toast@1.0.4(svelte@4.2.5):
-    resolution: {integrity: sha512-SReYhph91QOVxcVNlj8P0jbfapCBEwV4JvTKyFe0uYSPOkGwmcPCDTOPgjBDo6L8ZoSUBjJDmyud/9DycDOV3A==}
+  /@jill64/svelte-toast@1.0.5(svelte@4.2.5):
+    resolution: {integrity: sha512-ty4LbckNzE+UG+CnrKUX+5i4LZGxLfegx7c6GU0XRSZDhq5RcEyjWf8e1Ia11oxQqh0ybCko7Mr7BAq81p3kSg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
