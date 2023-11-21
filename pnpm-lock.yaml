@@ -46,8 +46,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/svelte-toast':
-        specifier: 1.1.1
-        version: 1.1.1(svelte@4.2.7)
+        specifier: 1.2.0
+        version: 1.2.0(svelte@4.2.7)
       '@sentry/vite-plugin':
         specifier: 2.10.1
         version: 2.10.1
@@ -583,14 +583,15 @@ packages:
       svelte-mq-store: 0.0.1(svelte@4.2.7)
     dev: true
 
-  /@jill64/svelte-toast@1.1.1(svelte@4.2.7):
-    resolution: {integrity: sha512-ZEckIItuz+4nZ+XmjyPeZ9f2fLDl1MoVh/o94uxJ3W/Ph5togamKCr6VJkYK/3Q2dsHP2h4qZhPlTBTBg7LiJQ==}
+  /@jill64/svelte-toast@1.2.0(svelte@4.2.7):
+    resolution: {integrity: sha512-8Zv6jIgB0ry6tDFvpucNDA/clgIDDbsqQIPpLSuNkvyewiQDqeOaAJ0oMbTZgQf1WYQhswTBn0y97nmdj/fFQg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-device-theme': 1.2.1(svelte@4.2.7)
       svelte: 4.2.7
       svelte-french-toast: 1.2.0(svelte@4.2.7)
+      svelte-mq-store: 0.0.1(svelte@4.2.7)
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
