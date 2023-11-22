@@ -14,7 +14,7 @@
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-svelte": "2.35.1",
-    "prettier-plugin-svelte": "3.1.1",
+    "prettier-plugin-svelte": "3.1.2",
     "svelte": "4.2.7",
     "vite": "5.0.2"
   }
