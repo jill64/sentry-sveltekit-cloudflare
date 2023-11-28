@@ -54,10 +54,10 @@
   },
   "devDependencies": {
     "@playwright/test": "1.40.0",
-    "@sentry/core": "7.82.0",
-    "@sentry/utils": "7.82.0",
+    "@sentry/core": "7.83.0",
+    "@sentry/utils": "7.83.0",
     "@sveltejs/kit": "1.27.6",
-    "@sentry/sveltekit": "7.82.0",
+    "@sentry/sveltekit": "7.83.0",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
     "esbuild": "0.19.8",
