@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   use: {
-    baseURL: 'https://dev.sentry-sveltekit-cloudflare.pages.dev'
+    baseURL: `https://${process.env.GITHUB_REF_NAME}.sentry-sveltekit-cloudflare.pages.dev`
   },
   testDir: 'tests',
   fullyParallel: true,
