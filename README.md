@@ -54,7 +54,7 @@ const onError = clientInit(
   // }
 )
 
-export const handleError = onError((e) => {
+export const handleError = onError((e, sentryEventId) => {
   // Your Error Handler
 })
 ```
@@ -83,7 +83,7 @@ export const handle = onHandle(({ event, resolve }) => {
   // Your Handle Code
 })
 
-export const handleError = onError((e) => {
+export const handleError = onError((e, sentryEventId) => {
   // Your Error Handler
 })
 ```
