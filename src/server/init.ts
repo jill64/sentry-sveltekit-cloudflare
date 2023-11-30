@@ -1,7 +1,7 @@
 import { dev } from '$app/environment'
-import type { Options } from 'toucan-js'
 import { makeHandler } from './makeHandler.js'
-import { SentryHandleOptions } from './types/SentryHandleOptions.js'
+import { HandleWrappers } from './types/HandleWrappers.js'
+import { InitOptions } from './types/InitOptions.js'
 import { defaultErrorHandler } from './util/defaultErrorHandler.js'
 import { defaultHandler } from './util/defaultHandler.js'
 
@@ -14,23 +14,8 @@ export const init = (
   /**
    * Server Init Options
    */
-  options?: {
-    /**
-     * Toucan Options
-     * @see https://github.com/robertcepa/toucan-js/blob/master/packages/toucan-js/src/types.ts
-     */
-    toucanOptions?: Partial<Options>
-    /**
-     * Sentry Handle Options
-     */
-    handleOptions?: SentryHandleOptions
-    /**
-     * Enable in dev mode
-     * @default false
-     */
-    enableInDevMode?: boolean
-  }
-) => {
+  options?: InitOptions
+): HandleWrappers => {
   const { enableInDevMode } = options ?? {}
 
   if (dev && !enableInDevMode) {

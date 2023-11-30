@@ -9,6 +9,11 @@ export const handle = onHandle(({ event, resolve }) => {
   return resolve(event)
 })
 
-export const handleError = onError((e) => {
+export const handleError = onError((e, sentryEventId) => {
   console.error(e)
+
+  return {
+    message: 'This error was successfully sent to Sentry',
+    sentryEventId
+  }
 })
