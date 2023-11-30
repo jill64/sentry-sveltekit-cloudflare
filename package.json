@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.40.1",
-    "@sentry/core": "7.83.0",
+    "@sentry/core": "7.84.0",
     "@sentry/utils": "7.83.0",
     "@sveltejs/kit": "1.27.6",
     "@sentry/sveltekit": "7.83.0",
