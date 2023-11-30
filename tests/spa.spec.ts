@@ -9,3 +9,10 @@ test('SPA', async ({ page }) => {
     page.getByRole('heading', { name: 'sentry-sveltekit-cloudflare' })
   ).toBeVisible()
 })
+
+test('SPA Throw', async ({ page }) => {
+  await page.goto('/throw/layout/server-load')
+
+  await expect(page.getByRole('heading', { name: 'Error Page' })).toBeVisible()
+  await expect(page.getByText('EventId: undefined')).not.toBeVisible()
+})
