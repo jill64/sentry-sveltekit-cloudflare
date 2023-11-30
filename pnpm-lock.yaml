@@ -16,8 +16,8 @@ importers:
         specifier: 1.40.1
         version: 1.40.1
       '@sentry/core':
-        specifier: 7.83.0
-        version: 7.83.0
+        specifier: 7.84.0
+        version: 7.84.0
       '@sentry/sveltekit':
         specifier: 7.83.0
         version: 7.83.0(@sveltejs/kit@1.27.6)(svelte@4.2.8)
@@ -942,6 +942,14 @@ packages:
       '@sentry/utils': 7.83.0
     dev: true
 
+  /@sentry/core@7.84.0:
+    resolution: {integrity: sha512-tbuwunbBx2kSex15IHCqHDnrMfIlqPc6w/76fwkGqokz3oh9GSEGlLICwmBWL8AypWimUg13IDtFpD0TJTriWA==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@sentry/types': 7.84.0
+      '@sentry/utils': 7.84.0
+    dev: true
+
   /@sentry/integrations@7.76.0:
     resolution: {integrity: sha512-4ea0PNZrGN9wKuE/8bBCRrxxw4Cq5T710y8rhdKHAlSUpbLqr/atRF53h8qH3Fi+ec0m38PB+MivKem9zUwlwA==}
     engines: {node: '>=8'}
@@ -1061,6 +1069,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /@sentry/types@7.84.0:
+    resolution: {integrity: sha512-VqGLIF3JOUrk7yIXjLXJvAORkZL1e3dDX0Q1okRehwyt/5CRE+mdUTeJZkBo9P9mBwgMyvtwklzOGGrzjb4eMA==}
+    engines: {node: '>=8'}
+    dev: true
+
   /@sentry/utils@7.76.0:
     resolution: {integrity: sha512-40jFD+yfQaKpFYINghdhovzec4IEpB7aAuyH/GtE7E0gLpcqnC72r55krEIVILfqIR2Mlr5OKUzyeoCyWAU/yw==}
     engines: {node: '>=8'}
@@ -1087,6 +1100,13 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       '@sentry/types': 7.83.0
+    dev: true
+
+  /@sentry/utils@7.84.0:
+    resolution: {integrity: sha512-qdUVuxnRBvaf05AU+28R+xYtZmi/Ymf8os3Njq9g4XuA+QEkZLbzmIpRK5W9Ja7vUtjOeg29Xgg43A8znde9LQ==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@sentry/types': 7.84.0
     dev: true
 
   /@sentry/vite-plugin@0.6.1:
