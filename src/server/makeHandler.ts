@@ -2,8 +2,10 @@ import { getCurrentHub, runWithAsyncContext } from '@sentry/core'
 import type { Handle, HandleServerError, RequestEvent } from '@sveltejs/kit'
 import { sequence } from '@sveltejs/kit/hooks'
 import type { Options } from 'toucan-js'
+import type { Captured } from '../common/types/Captured.js'
 import { initSentry } from './initSentry.js'
 import { instrumentHandle } from './instrumentHandle.js'
+import { HandleWrappers } from './types/HandleWrappers.js'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
 import { defaultErrorHandler } from './util/defaultErrorHandler.js'
 import { isNotFoundError } from './util/isNotFoundError.js'
@@ -14,7 +16,7 @@ export const makeHandler = (
     toucanOptions?: Partial<Options>
     handleOptions?: SentryHandleOptions
   }
-) => {
+): HandleWrappers => {
   const { handleOptions, toucanOptions } = arg ?? {}
 
   const init = (event: RequestEvent) =>
@@ -35,8 +37,8 @@ export const makeHandler = (
   const onHandle = (handle?: Handle) =>
     handle ? sequence(sentryHandle, handle) : sentryHandle
 
-  const onError =
-    (handleError = defaultErrorHandler): HandleServerError =>
+  const onError: Captured<HandleServerError> =
+    (handleError = defaultErrorHandler) =>
     (input) => {
       if (isNotFoundError(input)) {
         return handleError(input)
@@ -44,9 +46,9 @@ export const makeHandler = (
 
       const Sentry = init(input.event)
 
-      Sentry.captureException(input.error)
+      const result = Sentry.captureException(input.error)
 
-      return handleError(input)
+      return handleError(input, result)
     }
 
   return {
