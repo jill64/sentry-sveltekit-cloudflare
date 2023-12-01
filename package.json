@@ -41,6 +41,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "prettier": "@jill64/prettier-config",
   "scripts": {
     "dev": "cd demo && npm run dev",
     "build": "npm run build:lib && npm run build:demo && npx publint",
@@ -53,21 +54,21 @@
     "lint:lib": "npx eslint .",
     "lint:demo": "cd demo && npm run lint",
     "format": "npm run format:lib && npm run format:demo",
-    "format:lib": "npx prettier --write .",
+    "format:lib": "npx prettier -w .",
     "format:demo": "cd demo && npm run format"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^1.0.0"
   },
   "devDependencies": {
+    "@jill64/eslint-config-ts": "0.1.2",
+    "@jill64/prettier-config": "0.0.1",
+    "@jill64/playwright-config": "0.0.1",
     "@playwright/test": "1.40.1",
     "@sentry/core": "7.84.0",
     "@sentry/utils": "7.84.0",
     "@sveltejs/kit": "1.27.6",
-    "@typescript-eslint/eslint-plugin": "6.13.1",
-    "@typescript-eslint/parser": "6.13.1",
     "esbuild": "0.19.8",
-    "eslint-plugin-deprecation": "2.0.0",
     "typescript": "5.3.2"
   },
   "dependencies": {
