@@ -64,7 +64,6 @@
     "@sentry/core": "7.84.0",
     "@sentry/utils": "7.84.0",
     "@sveltejs/kit": "1.27.6",
-    "@sentry/sveltekit": "7.84.0",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
     "esbuild": "0.19.8",
@@ -72,6 +71,7 @@
     "typescript": "5.3.2"
   },
   "dependencies": {
+    "@sentry/sveltekit": "7.84.0",
     "toucan-js": "3.3.1"
   }
 }
