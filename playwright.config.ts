@@ -1,8 +1,13 @@
 import { defineConfig, devices } from '@playwright/test'
 
+const ref_name = process.env.GITHUB_REF_NAME
+
 export default defineConfig({
   use: {
-    baseURL: `https://${process.env.GITHUB_REF_NAME}.sentry-sveltekit-cloudflare.pages.dev`
+    baseURL:
+      ref_name === 'main'
+        ? 'https://sentry-sveltekit-cloudflare.pages.dev'
+        : `https://${ref_name}.sentry-sveltekit-cloudflare.pages.dev`
   },
   testDir: 'tests',
   fullyParallel: true,
