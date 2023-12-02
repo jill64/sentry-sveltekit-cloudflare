@@ -61,7 +61,7 @@
     "@sveltejs/kit": "^1.0.0"
   },
   "devDependencies": {
-    "@jill64/eslint-config-ts": "0.1.2",
+    "@jill64/eslint-config-ts": "0.1.4",
     "@jill64/prettier-config": "0.0.2",
     "@jill64/playwright-config": "0.0.1",
     "@playwright/test": "1.40.1",
