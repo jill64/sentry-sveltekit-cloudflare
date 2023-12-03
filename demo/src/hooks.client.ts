@@ -1,4 +1,4 @@
-import { init } from '$dist/client/index-dev.js'
+import { init } from '$dist/client'
 
 const onError = init(
   'https://7e30b84f392c05d4a9a21e30f3ef6801@o4505814639312896.ingest.sentry.io/4505817123323904'
