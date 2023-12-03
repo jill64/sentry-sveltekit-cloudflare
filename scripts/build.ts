@@ -1,28 +1,18 @@
-import { build } from 'esbuild'
+import esbuild from 'esbuild'
 
-const opts = {
-  bundle: true,
-  minify: true,
-  format: 'esm'
-} as const
+const build = (path: string, external?: string[]) =>
+  esbuild.build({
+    entryPoints: [`src/${path}.ts`],
+    outfile: `dist/${path}.js`,
+    bundle: true,
+    minify: true,
+    format: 'esm',
+    external: ['$app/*', ...(external ?? [])]
+  })
 
-build({
-  ...opts,
-  entryPoints: ['src/index.ts'],
-  outfile: 'dist/index.js',
-  external: ['$app/*', 'toucan-js']
-})
-
-build({
-  ...opts,
-  entryPoints: ['src/client/index.ts'],
-  outfile: 'dist/client/index.js',
-  external: ['$app/*']
-})
-
-build({
-  ...opts,
-  entryPoints: ['src/server/index.ts'],
-  outfile: 'dist/server/index.js',
-  external: ['$app/*', 'toucan-js']
-})
+build('index', ['toucan-js'])
+build('index-dev', ['toucan-js'])
+build('client/index')
+build('client/index-dev')
+build('server/index', ['toucan-js'])
+build('server/index-dev', ['toucan-js'])

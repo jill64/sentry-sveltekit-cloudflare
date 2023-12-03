@@ -27,14 +27,17 @@
   "exports": {
     "./client": {
       "types": "./dist/client/index.d.ts",
+      "development": "./dist/client/index-dev.js",
       "default": "./dist/client/index.js"
     },
     "./server": {
       "types": "./dist/server/index.d.ts",
+      "development": "./dist/server/index-dev.js",
       "default": "./dist/server/index.js"
     },
     ".": {
       "types": "./dist/index.d.ts",
+      "development": "./dist/index-dev.js",
       "default": "./dist/index.js"
     }
   },
@@ -43,7 +46,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "scripts": {
-    "dev": "cd demo && npm run dev",
+    "dev": "pnpm build:lib && cd demo && npm run dev",
     "build": "npm run build:lib && npm run build:demo && npx publint",
     "build:lib": "tsc && npx tsx scripts/build.ts",
     "build:demo": "cd demo && npm run build",

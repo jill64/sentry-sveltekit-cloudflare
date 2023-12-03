@@ -1,9 +1,6 @@
-import { dev } from '$app/environment'
 import { makeHandler } from './makeHandler.js'
 import { HandleWrappers } from './types/HandleWrappers.js'
 import { InitOptions } from './types/InitOptions.js'
-import { defaultErrorHandler } from './util/defaultErrorHandler.js'
-import { defaultHandler } from './util/defaultHandler.js'
 
 export const init = (
   /**
@@ -15,15 +12,4 @@ export const init = (
    * Server Init Options
    */
   options?: InitOptions
-): HandleWrappers => {
-  const { enableInDevMode } = options ?? {}
-
-  if (dev && !enableInDevMode) {
-    return {
-      onHandle: (handle = defaultHandler) => handle,
-      onError: (handleError = defaultErrorHandler) => handleError
-    }
-  }
-
-  return makeHandler(dsn, options)
-}
+): HandleWrappers => makeHandler(dsn, options)
