@@ -46,8 +46,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/eslint-config-svelte':
-        specifier: 0.0.6
-        version: 0.0.6(svelte@4.2.8)(typescript@5.3.2)
+        specifier: 0.0.7
+        version: 0.0.7(svelte@4.2.8)(typescript@5.3.2)
       '@jill64/svelte-toast':
         specifier: 1.2.1
         version: 1.2.1(svelte@4.2.8)
@@ -544,8 +544,8 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@jill64/eslint-config-svelte@0.0.6(svelte@4.2.8)(typescript@5.3.2):
-    resolution: {integrity: sha512-Cu88xC1E9UfT6bGC0jxIMFtRDOHKDriJXe6lH5L5dAGhRpV60b3WSm74BkwVz4Ivh3Wnt5qqS7qZ3E0bjK9uEg==}
+  /@jill64/eslint-config-svelte@0.0.7(svelte@4.2.8)(typescript@5.3.2):
+    resolution: {integrity: sha512-sUmtJ4RupVke3P98q7qOBrs8c0fI6SxEbsINxeV5t72RLIXbxk5phsH2dLvjZzBcNJuAptuEBc4YNU6hg2m0zg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
