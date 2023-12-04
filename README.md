@@ -6,12 +6,6 @@
 
 ♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
 
-## Installation
-
-```sh
-npm i @jill64/sentry-sveltekit-cloudflare
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 Workaround until close [@sentry/javascript #8291](https://github.com/getsentry/sentry-javascript/issues/8291).  
