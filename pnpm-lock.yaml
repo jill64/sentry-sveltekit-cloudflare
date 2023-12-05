@@ -22,8 +22,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1(@playwright/test@1.40.1)
       '@jill64/prettier-config':
-        specifier: 0.0.2
-        version: 0.0.2
+        specifier: 1.0.0
+        version: 1.0.0
       '@playwright/test':
         specifier: 1.40.1
         version: 1.40.1
@@ -588,8 +588,8 @@ packages:
       '@playwright/test': 1.40.1
     dev: true
 
-  /@jill64/prettier-config@0.0.2:
-    resolution: {integrity: sha512-NFJtEw00inP/qp5+cwZvrIbPgnJPTTUNwuxOXIKsZ83z6sv1fPkqBfuHESH2fOc9m3NHtJKO4lQIO3RnBiJhRw==}
+  /@jill64/prettier-config@1.0.0:
+    resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
     dev: true
 
   /@jill64/svelte-device-theme@1.2.2(svelte@4.2.8):
