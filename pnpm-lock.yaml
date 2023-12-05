@@ -55,8 +55,8 @@ importers:
         specifier: 2.10.2
         version: 2.10.2
       '@sveltejs/adapter-cloudflare':
-        specifier: 2.3.3
-        version: 2.3.3(@sveltejs/kit@1.27.6)
+        specifier: 2.3.4
+        version: 2.3.4(@sveltejs/kit@1.27.6)
       svelte:
         specifier: 4.2.8
         version: 4.2.8
@@ -1121,8 +1121,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/adapter-cloudflare@2.3.3(@sveltejs/kit@1.27.6):
-    resolution: {integrity: sha512-bbcm6kq4dEluFtFJZed3KSRG4f5GUElYkVfOmnPruTqZ29nTElPJTomAu5QCp7GLkwA26O3h1Dk7+d9yLTQEXg==}
+  /@sveltejs/adapter-cloudflare@2.3.4(@sveltejs/kit@1.27.6):
+    resolution: {integrity: sha512-+5Msbm7svrZjaBt0KapNh2zEaMRfrhbTRBWRXrFa+w+KFRQnHjFIPvWz/NQ11XKVu7dRe7mkzqvqieL2b0hpJw==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
