@@ -9,9 +9,7 @@
   "bugs": "https://github.com/jill64/sentry-sveltekit-cloudflare/issues",
   "homepage": "https://github.com/jill64/sentry-sveltekit-cloudflare#readme",
   "files": [
-    "dist",
-    "!*.test.*",
-    "!*.spec.*"
+    "dist"
   ],
   "keywords": [
     "cloudflare",

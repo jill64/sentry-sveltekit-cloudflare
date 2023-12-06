@@ -11,6 +11,12 @@
 Workaround until close [@sentry/javascript #8291](https://github.com/getsentry/sentry-javascript/issues/8291).  
 If you are looking for other node-less adapters, see [`sentry-sveltkeit-edge`](https://github.com/jill64/sentry-sveltekit-edge).
 
+## Installation
+
+```sh
+npm i @jill64/sentry-sveltekit-cloudflare
+```
+
 ## Configuration
 
 Add the following settings to your SvelteKit application's `vite.config.js`.
@@ -35,9 +41,11 @@ export default defineConfig({
 
 ```js
 // hooks.client.js
-import { clientInit } from '@jill64/sentry-sveltekit-cloudflare'
+import { init } from '@jill64/sentry-sveltekit-cloudflare/client'
+// or
+// import { clientInit } from '@jill64/sentry-sveltekit-cloudflare'
 
-const onError = clientInit(
+const onError = init(
   '__YOUR_SENTRY_DSN__'
   // ,
   // {
@@ -57,9 +65,11 @@ export const handleError = onError((e, sentryEventId) => {
 
 ```js
 // hooks.server.js
-import { serverInit } from '@jill64/sentry-sveltekit-cloudflare'
+import { init } from '@jill64/sentry-sveltekit-cloudflare/server'
+// or
+// import { serverInit } from '@jill64/sentry-sveltekit-cloudflare'
 
-const { onHandle, onError } = serverInit(
+const { onHandle, onError } = init(
   '__YOUR_SENTRY_DSN__'
   // ,
   // {
