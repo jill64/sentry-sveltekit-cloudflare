@@ -8,7 +8,7 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
-Workaround until close [@sentry/javascript #8291](https://github.com/getsentry/sentry-javascript/issues/8291).  
+Workaround until close [@sentry/javascript #8291](https://github.com/getsentry/sentry-javascript/issues/8291).
 
 > [!NOTE]
 > If you are looking for other node-less adapters, see [sentry-sveltkeit-edge](https://github.com/jill64/sentry-sveltekit-edge).
