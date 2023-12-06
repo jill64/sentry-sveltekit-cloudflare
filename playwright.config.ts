@@ -5,13 +5,10 @@ const ref_name = process.env.GITHUB_REF_NAME?.replaceAll('/', '-')
   .slice(0, 28)
 
 export default extendsConfig(
-  process.env.CI
+  ref_name === 'main'
     ? {
         use: {
-          baseURL:
-            ref_name === 'main'
-              ? 'https://sentry-sveltekit-cloudflare.pages.dev'
-              : `https://${ref_name}.sentry-sveltekit-cloudflare.pages.dev`
+          baseURL: 'https://sentry-sveltekit-cloudflare.pages.dev'
         }
       }
     : {
