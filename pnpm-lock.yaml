@@ -49,8 +49,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0(svelte@4.2.8)(typescript@5.3.2)
       '@jill64/svelte-toast':
-        specifier: 1.2.1
-        version: 1.2.1(svelte@4.2.8)
+        specifier: 1.2.2
+        version: 1.2.2(svelte@4.2.8)
       '@sentry/vite-plugin':
         specifier: 2.10.2
         version: 2.10.2
@@ -592,24 +592,24 @@ packages:
     resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
     dev: true
 
-  /@jill64/svelte-device-theme@1.2.2(svelte@4.2.8):
-    resolution: {integrity: sha512-M4woCkhP0lmzPZQq71WEIoc2qvep+RLFI5X/iquZCLTXwwiqlrapmeOQQ2Ic/iHrEAmrH/VF0+b88Ib7QqdHtA==}
+  /@jill64/svelte-device-theme@1.2.3(svelte@4.2.8):
+    resolution: {integrity: sha512-v7fFeX/lz2iGsKjgi6PGuNSTVJsoMVpA7VKXW6DkxULUCtJptIpjyC8DDD0zd8D03gIFgx+n6evZ5dPgg4bv0w==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       svelte: 4.2.8
-      svelte-mq-store: 1.0.0(svelte@4.2.8)
+      svelte-mq-store: 2.0.0(svelte@4.2.8)
     dev: true
 
-  /@jill64/svelte-toast@1.2.1(svelte@4.2.8):
-    resolution: {integrity: sha512-GjB6QzepC3QyH7slrFsS1v7mx2YqAjmliTNSzLanPQZGMTPZaIOQDGDV2GSMrb3xoO87mtJVSalYPOcFyiAMxw==}
+  /@jill64/svelte-toast@1.2.2(svelte@4.2.8):
+    resolution: {integrity: sha512-PnanL81Gs/wAJadiexRLXGhi6aUva+uqseVMHIhFP1pGVcbgxEXNWBlSYtwhpJwtDkoKXIpbH/7ma8pjPT/WpQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-device-theme': 1.2.2(svelte@4.2.8)
+      '@jill64/svelte-device-theme': 1.2.3(svelte@4.2.8)
       svelte: 4.2.8
       svelte-french-toast: 1.2.0(svelte@4.2.8)
-      svelte-mq-store: 1.0.0(svelte@4.2.8)
+      svelte-mq-store: 2.0.0(svelte@4.2.8)
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -2809,12 +2809,11 @@ packages:
     dependencies:
       svelte: 4.2.8
 
-  /svelte-mq-store@1.0.0(svelte@4.2.8):
-    resolution: {integrity: sha512-3n/86onQtqd231vW066341pDTnBXPqDEPcc0JGTmKtHqmA6ipa6iIu4siGXpsDrI26u3A9YazuRSiGsKKErabQ==}
+  /svelte-mq-store@2.0.0(svelte@4.2.8):
+    resolution: {integrity: sha512-VJALvjc8uFIUledmRcJ/eRjS+v//2uHJkUR7+z5oE/vqPp6HKO9M7H6q04r2U3fxp09vNN1ZnEck5NkK3uJwyA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      esm-env: 1.0.0
       svelte: 4.2.8
     dev: true
 
