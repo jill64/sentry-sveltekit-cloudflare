@@ -35,9 +35,11 @@ export default defineConfig({
 
 ```js
 // hooks.client.js
-import { clientInit } from '@jill64/sentry-sveltekit-cloudflare'
+import { init } from '@jill64/sentry-sveltekit-cloudflare/client'
+// or
+// import { clientInit } from '@jill64/sentry-sveltekit-cloudflare'
 
-const onError = clientInit(
+const onError = init(
   '__YOUR_SENTRY_DSN__'
   // ,
   // {
@@ -57,9 +59,11 @@ export const handleError = onError((e, sentryEventId) => {
 
 ```js
 // hooks.server.js
-import { serverInit } from '@jill64/sentry-sveltekit-cloudflare'
+import { init } from '@jill64/sentry-sveltekit-cloudflare/server'
+// or
+// import { serverInit } from '@jill64/sentry-sveltekit-cloudflare'
 
-const { onHandle, onError } = serverInit(
+const { onHandle, onError } = init(
   '__YOUR_SENTRY_DSN__'
   // ,
   // {
