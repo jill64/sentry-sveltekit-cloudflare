@@ -49,8 +49,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1(svelte@4.2.8)(typescript@5.3.3)
       '@jill64/svelte-toast':
-        specifier: 1.2.2
-        version: 1.2.2(svelte@4.2.8)
+        specifier: 1.2.4
+        version: 1.2.4(svelte@4.2.8)
       '@sentry/vite-plugin':
         specifier: 2.10.2
         version: 2.10.2
@@ -605,15 +605,15 @@ packages:
       svelte-mq-store: 2.0.0(svelte@4.2.8)
     dev: true
 
-  /@jill64/svelte-toast@1.2.2(svelte@4.2.8):
-    resolution: {integrity: sha512-PnanL81Gs/wAJadiexRLXGhi6aUva+uqseVMHIhFP1pGVcbgxEXNWBlSYtwhpJwtDkoKXIpbH/7ma8pjPT/WpQ==}
+  /@jill64/svelte-toast@1.2.4(svelte@4.2.8):
+    resolution: {integrity: sha512-pw7zDDLGjQZ5WTzBCo0mCF3cKpzSZgYRh6lm2/lcXRILmcNkizPuYiRebVG6e+sIbbW4+XDMWQ7Kj/oLK1PgAA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-device-theme': 1.2.3(svelte@4.2.8)
       svelte: 4.2.8
       svelte-french-toast: 1.2.0(svelte@4.2.8)
-      svelte-mq-store: 2.0.0(svelte@4.2.8)
+      svelte-mq-store: 2.1.1(svelte@4.2.8)
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -2825,6 +2825,14 @@ packages:
 
   /svelte-mq-store@2.0.0(svelte@4.2.8):
     resolution: {integrity: sha512-VJALvjc8uFIUledmRcJ/eRjS+v//2uHJkUR7+z5oE/vqPp6HKO9M7H6q04r2U3fxp09vNN1ZnEck5NkK3uJwyA==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
+    dev: true
+
+  /svelte-mq-store@2.1.1(svelte@4.2.8):
+    resolution: {integrity: sha512-kvh3OXsef9IF0YiBKROlgniCzBO/V4hIVAV35kp6wH+p5aQR5F5df7dxMBa47tclWvI7huPntMKwM6YGTo8mUA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
