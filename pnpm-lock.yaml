@@ -46,8 +46,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/eslint-config-svelte':
-        specifier: 1.0.0
-        version: 1.0.0(svelte@4.2.8)(typescript@5.3.3)
+        specifier: 1.0.1
+        version: 1.0.1(svelte@4.2.8)(typescript@5.3.3)
       '@jill64/svelte-toast':
         specifier: 1.2.2
         version: 1.2.2(svelte@4.2.8)
@@ -544,13 +544,15 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@jill64/eslint-config-svelte@1.0.0(svelte@4.2.8)(typescript@5.3.3):
-    resolution: {integrity: sha512-iPwQC2IJJ4+RPB1S0W1jakJadCRWQDFZ+FTaf/YUPL5X606DBiUG9vbGnxFm7LPoEtt5DAEh1itFNbyn86tTeg==}
+  /@jill64/eslint-config-svelte@1.0.1(svelte@4.2.8)(typescript@5.3.3):
+    resolution: {integrity: sha512-54oSkmqSrPhd755Rmo/EYO+rRgeKAtdwWLcEUqB16651PXiCpxcE9qH2NIK1g7+Qy9PTBqlbnKzvhf9Rx8ZyMA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@eslint/js': 8.55.0
       '@types/eslint': 8.44.8
+      '@types/eslint-config-prettier': 6.11.3
+      '@types/eslint__js': 8.42.3
       '@typescript-eslint/eslint-plugin': 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.3)
       eslint: 8.55.0
@@ -1260,11 +1262,21 @@ packages:
   /@types/cookie@0.5.3:
     resolution: {integrity: sha512-SLg07AS9z1Ab2LU+QxzU8RCmzsja80ywjf/t5oqw+4NSH20gIGlhLOrBDm1L3PBWzPa4+wkgFQVZAjE6Ioj2ug==}
 
+  /@types/eslint-config-prettier@6.11.3:
+    resolution: {integrity: sha512-3wXCiM8croUnhg9LdtZUJQwNcQYGWxxdOWDjPe1ykCqJFPVpzAKfs/2dgSoCtAvdPeaponcWPI7mPcGGp9dkKQ==}
+    dev: true
+
   /@types/eslint@8.44.8:
     resolution: {integrity: sha512-4K8GavROwhrYl2QXDXm0Rv9epkA8GBFu0EI+XrrnnuCl7u8CWBRusX7fXJfanhZTDWSAL24gDI/UqXyUM0Injw==}
     dependencies:
       '@types/estree': 1.0.3
       '@types/json-schema': 7.0.15
+    dev: true
+
+  /@types/eslint__js@8.42.3:
+    resolution: {integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==}
+    dependencies:
+      '@types/eslint': 8.44.8
     dev: true
 
   /@types/estree@1.0.3:
