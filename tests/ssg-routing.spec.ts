@@ -6,6 +6,6 @@ test('SSG Routing', async ({ page }) => {
     page.getByRole('heading', { name: 'sentry-sveltekit-cloudflare' })
   ).toBeVisible()
 
-  await page.goto('/ssg')
+  await page.getByRole('link', { name: '/ssg' }).click()
   await expect(page.getByRole('heading', { name: 'SSG' })).toBeVisible()
 })
