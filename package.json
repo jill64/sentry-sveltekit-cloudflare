@@ -70,7 +70,7 @@
     "@sentry/core": "7.86.0",
     "@sentry/utils": "7.86.0",
     "@sveltejs/kit": "1.27.7",
-    "esbuild": "0.19.8",
+    "esbuild": "0.19.9",
     "typescript": "5.3.3"
   },
   "dependencies": {
