@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/sentry-sveltekit-cloudflare/issues",
   "homepage": "https://github.com/jill64/sentry-sveltekit-cloudflare#readme",
   "files": [
@@ -21,7 +26,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/sentry-sveltekit-cloudflare.git"
+    "url": "https://github.com/jill64/sentry-sveltekit-cloudflare.git",
+    "image": "https://opengraph.githubassets.com/ee34d6738a4724325a1e421b2523978c7fac08e11c603bc048e92e92db2061b2/jill64/sentry-sveltekit-cloudflare"
   },
   "exports": {
     "./client": {
