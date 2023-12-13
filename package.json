@@ -75,7 +75,7 @@
     "@playwright/test": "1.40.1",
     "@sentry/core": "7.87.0",
     "@sentry/utils": "7.87.0",
-    "@sveltejs/kit": "1.30.2",
+    "@sveltejs/kit": "1.30.3",
     "esbuild": "0.19.9",
     "typescript": "5.3.3"
   },
