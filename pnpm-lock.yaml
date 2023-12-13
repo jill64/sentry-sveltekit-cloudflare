@@ -46,8 +46,8 @@ importers:
   demo:
     devDependencies:
       '@jill64/eslint-config-svelte':
-        specifier: 1.0.2
-        version: 1.0.2(svelte@4.2.8)(typescript@5.3.3)
+        specifier: 1.0.3
+        version: 1.0.3(svelte@4.2.8)(typescript@5.3.3)
       '@jill64/svelte-toast':
         specifier: 1.2.5
         version: 1.2.5(svelte@4.2.8)
@@ -543,13 +543,13 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@jill64/eslint-config-svelte@1.0.2(svelte@4.2.8)(typescript@5.3.3):
-    resolution: {integrity: sha512-szrkUeiAri8/Jh0NOVRaeYU2r1cCWBxapECprvfrk/d3bK4OmzoUPC5NvboAqdiexU0FUaArSWPfSFlcUYYccw==}
+  /@jill64/eslint-config-svelte@1.0.3(svelte@4.2.8)(typescript@5.3.3):
+    resolution: {integrity: sha512-O7eA4daV9J3Oi7aqC7HFTAWSnPdNKsq/TOa8yGylIrV4AACnxlrqAkLxjBrEsj8GWwDZJWKnAMH1oeNN35yKxg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@eslint/js': 8.55.0
-      '@types/eslint': 8.44.8
+      '@types/eslint': 8.44.9
       '@types/eslint-config-prettier': 6.11.3
       '@types/eslint__js': 8.42.3
       '@typescript-eslint/eslint-plugin': 6.14.0(@typescript-eslint/parser@6.14.0)(eslint@8.55.0)(typescript@5.3.3)
@@ -1272,10 +1272,17 @@ packages:
       '@types/json-schema': 7.0.15
     dev: true
 
+  /@types/eslint@8.44.9:
+    resolution: {integrity: sha512-6yBxcvwnnYoYT1Uk2d+jvIfsuP4mb2EdIxFnrPABj5a/838qe5bGkNLFOiipX4ULQ7XVQvTxOh7jO+BTAiqsEw==}
+    dependencies:
+      '@types/estree': 1.0.3
+      '@types/json-schema': 7.0.15
+    dev: true
+
   /@types/eslint__js@8.42.3:
     resolution: {integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==}
     dependencies:
-      '@types/eslint': 8.44.8
+      '@types/eslint': 8.44.9
     dev: true
 
   /@types/estree@1.0.3:
@@ -1622,6 +1629,7 @@ packages:
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
+    hasBin: true
     dev: true
 
   /debug@4.3.4:
@@ -1831,6 +1839,7 @@ packages:
   /eslint@8.55.0:
     resolution: {integrity: sha512-iyUUAM0PCKj5QpwGfmCAG9XXbZCWsqP/eWAWrG/W0umvjuLRBECwSFdt+rCntju0xEH7teIABPwXpahftIaTdA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.55.0)
       '@eslint-community/regexpp': 4.9.1
@@ -2631,12 +2640,14 @@ packages:
 
   /rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    hasBin: true
     dependencies:
       glob: 7.2.3
     dev: false
 
   /rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    hasBin: true
     dependencies:
       glob: 7.2.3
     dev: true
@@ -3072,6 +3083,7 @@ packages:
   /which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
+    hasBin: true
     dependencies:
       isexe: 2.0.0
 
