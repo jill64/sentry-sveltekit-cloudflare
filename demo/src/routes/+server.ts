@@ -10,9 +10,7 @@ export const PUT = () => {
   })
 }
 
-export const PATCH = () => {
-  throw error(400, 'PATCH Error')
-}
+export const PATCH = () => error(400, 'PATCH Error')
 
 export const DELETE = () => {
   throw new Error('DELETE Error')
