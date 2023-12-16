@@ -16,8 +16,8 @@ importers:
         version: 3.3.1
     devDependencies:
       '@jill64/eslint-config-ts':
-        specifier: 1.0.3
-        version: 1.0.3(typescript@5.3.3)
+        specifier: 1.0.4
+        version: 1.0.4(typescript@5.3.3)
       '@jill64/playwright-config':
         specifier: 2.2.0
         version: 2.2.0(@playwright/test@1.40.1)
@@ -383,10 +383,10 @@ packages:
       - typescript
     dev: true
 
-  /@jill64/eslint-config-ts@1.0.3(typescript@5.3.3):
-    resolution: {integrity: sha512-Nq/TWNotgjoBsvVR2bPJjpAmE+rBhiKktQUMgS+FdN8dT6k0Xq3VuzNAXB6444Io4mqB8EZRIde7HnPCsHdZbw==}
+  /@jill64/eslint-config-ts@1.0.4(typescript@5.3.3):
+    resolution: {integrity: sha512-ogmj+4hM4DM5c8J+Y2nXhJj0VY9F5A5vyLIlqffPyC/zn0dVs32MZ5yBipONCiOrhNU6Le2quc+fb55eRcHkjQ==}
     dependencies:
-      '@eslint/js': 8.55.0
+      '@eslint/js': 8.56.0
       '@types/eslint': 8.44.9
       '@types/eslint-config-prettier': 6.11.3
       '@types/eslint__js': 8.42.3
