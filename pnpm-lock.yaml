@@ -55,8 +55,8 @@ importers:
         specifier: 2.10.2
         version: 2.10.2
       '@sveltejs/adapter-cloudflare':
-        specifier: 3.0.0
-        version: 3.0.0(@sveltejs/kit@2.0.3)
+        specifier: 3.0.1
+        version: 3.0.1(@sveltejs/kit@2.0.3)
       '@sveltejs/vite-plugin-svelte':
         specifier: 3.0.1
         version: 3.0.1(svelte@4.2.8)(vite@5.0.10)
@@ -1059,14 +1059,14 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/adapter-cloudflare@3.0.0(@sveltejs/kit@2.0.3):
-    resolution: {integrity: sha512-McUuRy7cOZ/DNykW9DbcZjj+IKx2JmFPRqbZMpk5kwfpq5ay70JprRkpEcnSdYMEoNmp8C2xUHf43ha394dZuQ==}
+  /@sveltejs/adapter-cloudflare@3.0.1(@sveltejs/kit@2.0.3):
+    resolution: {integrity: sha512-yhncGexWlDE3DAd6N/wsuel7BFwgBGWkvTG8iMAEaE/dHSEEUEUXOFK4IMKtPZWFuIkXmyfLxOSD8A8Kzv7ppg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
       '@cloudflare/workers-types': 4.20231121.0
       '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
-      esbuild: 0.19.9
+      esbuild: 0.19.10
       worktop: 0.8.0-next.15
     dev: true
 
