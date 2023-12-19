@@ -120,3 +120,10 @@ export default defineConfig({
   ]
 })
 ```
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
