@@ -7,7 +7,7 @@
   "license": "MIT",
   "author": {
     "name": "jill64",
-    "email": "143883742+jill64@users.noreply.github.com",
+    "email": "intents.turrets0h@icloud.com",
     "url": "https://github.com/jill64",
     "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
@@ -71,7 +71,7 @@
   "devDependencies": {
     "@jill64/eslint-config-ts": "1.0.6",
     "@jill64/prettier-config": "1.0.0",
-    "@jill64/playwright-config": "2.2.0",
+    "@jill64/playwright-config": "2.2.1",
     "@playwright/test": "1.40.1",
     "@sentry/core": "7.88.0",
     "@sentry/utils": "7.88.0",
