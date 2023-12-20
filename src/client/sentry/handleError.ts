@@ -12,12 +12,15 @@ const defaultErrorHandler: HandleClientError = ({ error }) => {
 export const handleErrorWithSentry: Captured<HandleClientError> =
   (handleError = defaultErrorHandler) =>
   (input) => {
-    const result = captureException(input.error, {
-      mechanism: {
-        type: 'sveltekit',
-        handled: false
-      }
-    })
+    const result =
+      input?.status !== 404
+        ? captureException(input.error, {
+            mechanism: {
+              type: 'sveltekit',
+              handled: false
+            }
+          })
+        : undefined
 
     return handleError(input, result)
   }
