@@ -1,8 +1,12 @@
 <!----- BEGIN GHOST DOCS HEADER ----->
 
-# sentry-sveltekit-cloudflare
+# @jill64/sentry-sveltekit-cloudflare
 
-<!----- BEGIN GHOST DOCS BADGES -----><a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/npm/v/@jill64/sentry-sveltekit-cloudflare" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/npm/l/@jill64/sentry-sveltekit-cloudflare" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/npm/dm/@jill64/sentry-sveltekit-cloudflare" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/bundlephobia/min/@jill64/sentry-sveltekit-cloudflare" alt="npm-min-size" /></a> <a href="https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml"><img src="https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a><!----- END GHOST DOCS BADGES ----->
+
+<!----- BEGIN GHOST DOCS BADGES ----->
+<a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/npm/v/@jill64/sentry-sveltekit-cloudflare" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/npm/l/@jill64/sentry-sveltekit-cloudflare" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/npm/dm/@jill64/sentry-sveltekit-cloudflare" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/sentry-sveltekit-cloudflare"><img src="https://img.shields.io/bundlephobia/min/@jill64/sentry-sveltekit-cloudflare" alt="npm-min-size" /></a> <a href="https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml"><img src="https://github.com/jill64/sentry-sveltekit-cloudflare/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a>
+<!----- END GHOST DOCS BADGES ----->
+
 
 ♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter
 
