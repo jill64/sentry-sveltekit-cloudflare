@@ -1,1 +1,1 @@
-export * from '@sentry/sveltekit/esm/common/utils.js'
+export * from '../sentry-sveltekit/esm/common/utils.js'
