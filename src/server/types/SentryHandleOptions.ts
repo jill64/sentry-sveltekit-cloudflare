@@ -1,1 +1,1 @@
-export type { SentryHandleOptions } from '@sentry/sveltekit/types/server/handle.js'
+export type { SentryHandleOptions } from '../../sentry-sveltekit/types/server/handle.js'
