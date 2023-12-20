@@ -1,7 +1,11 @@
 import { HandleServerError } from '@sveltejs/kit'
 
 export const isNotFoundError = (input: Parameters<HandleServerError>[0]) => {
-  const { error, event } = input
+  const { error, event, status } = input
+
+  if (status === 404) {
+    return true
+  }
 
   const hasNoRouteId = !event.route || !event.route.id
 
