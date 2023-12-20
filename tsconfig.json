@@ -8,7 +8,9 @@
     "moduleResolution": "NodeNext",
     "skipLibCheck": true,
     "paths": {
-      "@sentry-sveltekit/*": ["./src/sentry-javascript/packages/sveltekit/src/*"],
+      "@sentry-sveltekit/*": [
+        "./src/sentry-javascript/packages/sveltekit/src/*"
+      ]
     }
   },
   "include": ["src"],
