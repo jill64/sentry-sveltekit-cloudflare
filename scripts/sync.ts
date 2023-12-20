@@ -27,4 +27,4 @@ await writeFile(
 )
 
 // Refresh workspace dependencies
-await promisify(exec)('pnpm i')
+await promisify(exec)('pnpm i --no-frozen-lockfile')
