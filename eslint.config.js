@@ -4,6 +4,6 @@ import { tsConfig } from '@jill64/eslint-config-ts'
 export default [
   ...tsConfig(),
   {
-    ignores: ['tests', 'demo', 'scripts']
+    ignores: ['tests', 'demo', 'scripts', 'src/sentry-sveltekit']
   }
 ]

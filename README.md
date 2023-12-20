@@ -120,6 +120,7 @@ export default defineConfig({
   ]
 })
 ```
+
 <!----- BEGIN GHOST DOCS FOOTER ----->
 
 ## License

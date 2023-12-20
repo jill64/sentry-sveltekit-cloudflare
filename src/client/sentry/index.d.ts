@@ -1,1 +1,1 @@
-export * from '@sentry/sveltekit/types/index.client.js'
+export * from '../../sentry-sveltekit/types/client/index.js'

@@ -1,5 +1,5 @@
-import type { BrowserOptions } from '@sentry/sveltekit'
 import type { DevOptions } from '../../common/types/DevOptions.js'
+import type { BrowserOptions } from '@sentry/svelte'
 
 export type InitOptions = DevOptions & {
   /**

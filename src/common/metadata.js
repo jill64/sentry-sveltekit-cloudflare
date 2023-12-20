@@ -1,1 +1,1 @@
-export * from '@sentry/sveltekit/esm/common/metadata.js'
+export * from '../sentry-sveltekit/esm/common/metadata.js'
