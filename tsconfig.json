@@ -6,7 +6,13 @@
     "declarationDir": "dist",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@sentry-sveltekit/*": [
+        "./src/sentry-javascript/packages/sveltekit/src/*"
+      ]
+    }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/sentry-javascript/**"]
 }

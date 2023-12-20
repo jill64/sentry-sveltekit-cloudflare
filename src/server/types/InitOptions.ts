@@ -1,5 +1,5 @@
 import type { Options } from 'toucan-js'
-import type { DevOptions } from '../../common/types/DevOptions.js'
+import type { DevOptions } from '../../types/DevOptions.js'
 import type { SentryHandleOptions } from './SentryHandleOptions.js'
 
 export type InitOptions = DevOptions & {

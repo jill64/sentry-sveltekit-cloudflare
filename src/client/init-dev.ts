@@ -1,7 +1,7 @@
 import { HandleClientError } from '@sveltejs/kit'
-import { Captured } from '../common/types/Captured.js'
+import type { Captured } from '../types/Captured.js'
 import { init as initProd } from './init.js'
-import { InitOptions } from './types/InitOptions.js'
+import type { InitOptions } from './types/InitOptions.js'
 
 export const init = (
   /**
