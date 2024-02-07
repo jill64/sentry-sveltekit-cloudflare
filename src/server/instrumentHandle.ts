@@ -1,12 +1,17 @@
-import { getCurrentScope, startSpan } from '@sentry/core'
-import { isHttpError, isRedirect } from '@sentry-sveltekit/common/utils.js'
-import { objectify } from '@sentry/utils'
+import {
+  SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN,
+  getCurrentScope,
+  setHttpStatus,
+  startSpan
+} from '@sentry/core'
 import type { RequestEvent } from '@sveltejs/kit'
 import { Handle } from '@sveltejs/kit'
 import { getTracePropagationData } from './getTracePropagationData.js'
 import { initSentry } from './initSentry.js'
-import { transformPageChunk } from './transformPageChunk.js'
+import { sendErrorToSentry } from './sendErrorToSentry.js'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
+import type { Span } from '@sentry/types'
+import { addSentryCodeToPage } from './addSentryCodeToPage.js'
 
 export const instrumentHandle = async ({
   input: { event, resolve },
@@ -23,16 +28,17 @@ export const instrumentHandle = async ({
 
   const { dynamicSamplingContext, traceparentData, propagationContext } =
     getTracePropagationData(event)
-
   getCurrentScope().setPropagationContext(propagationContext)
 
   try {
     const resolveResult = await startSpan(
       {
         op: 'http.server',
-        origin: 'auto.http.sveltekit',
+        attributes: {
+          [SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: 'auto.http.sveltekit'
+        },
         name: `${event.request.method} ${
-          event.route?.id ?? event.url.pathname
+          event.route?.id || event.url.pathname
         }`,
         status: 'ok',
         ...traceparentData,
@@ -44,32 +50,20 @@ export const instrumentHandle = async ({
               : dynamicSamplingContext
         }
       },
-      async (span) => {
-        const res = await resolve(event, { transformPageChunk })
+      async (span?: Span) => {
+        const res = await resolve(event, {
+          transformPageChunk: addSentryCodeToPage(options)
+        })
         if (span) {
-          span.setHttpStatus(res.status)
+          setHttpStatus(span, res.status)
         }
         return res
       }
     )
     return resolveResult
-  } catch (e) {
-    const objectifiedErr = objectify(e)
-
-    // similarly to the `load` function, we don't want to capture 4xx errors or redirects
-    if (
-      isRedirect(objectifiedErr) ||
-      (isHttpError(objectifiedErr) &&
-        objectifiedErr.status < 500 &&
-        objectifiedErr.status >= 400)
-    ) {
-      throw e
-    }
-
+  } catch (e: unknown) {
     const Sentry = init(event)
-
-    Sentry.captureException(objectifiedErr)
-
+    sendErrorToSentry(e, Sentry)
     throw e
   }
 }

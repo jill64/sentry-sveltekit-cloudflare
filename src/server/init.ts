@@ -1,4 +1,3 @@
-import { getCurrentHub, runWithAsyncContext } from '@sentry/core'
 import type { Handle, HandleServerError, RequestEvent } from '@sveltejs/kit'
 import { sequence } from '@sveltejs/kit/hooks'
 import type { Captured } from '../types/Captured.js'
@@ -31,10 +30,7 @@ export const init = (
 
   const sentryHandle: Handle = (input) => {
     const sentryHandleOption = { input, init, handleOptions }
-
-    return getCurrentHub().getScope().getSpan()
-      ? instrumentHandle(sentryHandleOption)
-      : runWithAsyncContext(() => instrumentHandle(sentryHandleOption))
+    return instrumentHandle(sentryHandleOption)
   }
 
   const onHandle = (handle?: Handle) =>
