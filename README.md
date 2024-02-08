@@ -129,6 +129,6 @@ export default defineConfig({
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <!----- END GHOST DOCS FOOTER ----->
