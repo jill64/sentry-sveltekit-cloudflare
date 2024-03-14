@@ -74,16 +74,16 @@
     "@jill64/playwright-config": "2.2.4",
     "@jill64/prettier-config": "1.0.0",
     "@playwright/test": "1.42.1",
-    "@sentry/types": "7.106.1",
-    "@sentry/core": "7.106.1",
-    "@sentry/utils": "7.106.1",
+    "@sentry/types": "7.107.0",
+    "@sentry/core": "7.107.0",
+    "@sentry/utils": "7.107.0",
     "@sveltejs/kit": "2.5.4",
     "@types/node": "20.11.27",
     "esbuild": "0.20.1",
     "typescript": "5.4.2"
   },
   "dependencies": {
-    "@sentry/svelte": "7.106.1",
+    "@sentry/svelte": "7.107.0",
     "toucan-js": "3.3.1"
   }
 }
