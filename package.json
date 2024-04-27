@@ -84,6 +84,6 @@
   },
   "dependencies": {
     "@sentry/svelte": "7.112.2",
-    "toucan-js": "3.3.1"
+    "toucan-js": "3.4.0"
   }
 }
