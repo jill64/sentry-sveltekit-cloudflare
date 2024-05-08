@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/sentry-sveltekit-cloudflare.git",
-    "image": "https://opengraph.githubassets.com/31114903cd68e3800bbe61707b2fa11dc1480c1b459b58bb965b4cf2f69ad622/jill64/sentry-sveltekit-cloudflare"
+    "image": "https://opengraph.githubassets.com/6cd681052eeff266da37e7a81ae6eaad81871470b91b93b02fb786e92586ae01/jill64/sentry-sveltekit-cloudflare"
   },
   "exports": {
     "./client": {
@@ -74,16 +74,16 @@
     "@jill64/playwright-config": "2.3.0",
     "@jill64/prettier-config": "1.0.0",
     "@playwright/test": "1.44.0",
-    "@sentry/types": "7.113.0",
-    "@sentry/core": "7.113.0",
-    "@sentry/utils": "7.113.0",
+    "@sentry/types": "7.114.0",
+    "@sentry/core": "7.114.0",
+    "@sentry/utils": "7.114.0",
     "@sveltejs/kit": "2.5.7",
     "@types/node": "20.12.11",
     "esbuild": "0.21.1",
     "typescript": "5.4.5"
   },
   "dependencies": {
-    "@sentry/svelte": "7.113.0",
+    "@sentry/svelte": "7.114.0",
     "toucan-js": "3.3.1"
   }
 }
