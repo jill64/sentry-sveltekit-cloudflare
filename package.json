@@ -73,7 +73,7 @@
     "@jill64/eslint-config-ts": "1.1.30",
     "@jill64/playwright-config": "2.4.0",
     "@jill64/prettier-config": "1.0.0",
-    "@playwright/test": "1.45.2",
+    "@playwright/test": "1.45.3",
     "@sentry/types": "7.118.0",
     "@sentry/core": "7.118.0",
     "@sentry/utils": "7.118.0",
