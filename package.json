@@ -1,6 +1,6 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
-  "version": "1.7.15",
+  "version": "1.7.16",
   "description": "♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/sentry-sveltekit-cloudflare.git",
-    "image": "https://opengraph.githubassets.com/3f06c859fb06136f12fb086896d6aa20dcf362c3074c10ed5f8aca29745655bb/jill64/sentry-sveltekit-cloudflare"
+    "image": "https://opengraph.githubassets.com/6ce8022581105c3b5d40c22b98f41af591242c04178c393eb9e0b2d04e3885f8/jill64/sentry-sveltekit-cloudflare"
   },
   "exports": {
     "./client": {
