@@ -80,7 +80,7 @@
     "@sveltejs/kit": "2.5.18",
     "@types/node": "20.14.11",
     "esbuild": "0.22.0",
-    "typescript": "5.5.3"
+    "typescript": "5.5.4"
   },
   "dependencies": {
     "@sentry/svelte": "7.118.0",
