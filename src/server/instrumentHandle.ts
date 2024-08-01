@@ -7,7 +7,7 @@ import {
 import type { RequestEvent } from '@sveltejs/kit'
 import { Handle } from '@sveltejs/kit'
 import { getTracePropagationData } from './getTracePropagationData.js'
-import { initSentry } from './initSentry.js'
+import type { initSentry } from './initSentry.js'
 import { sendErrorToSentry } from './sendErrorToSentry.js'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
 import type { Span } from '@sentry/types'
