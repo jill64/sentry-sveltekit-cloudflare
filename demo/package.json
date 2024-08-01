@@ -5,7 +5,7 @@
     "build": "vite build",
     "preview": "npm run build && vite preview",
     "lint": "npm run check && npx eslint .",
-    "format": "npx @jill64/psx",
+    "format": "npx psvx",
     "check": "svelte-kit sync && npx svelte-check"
   },
   "prettier": "@jill64/prettier-config",
