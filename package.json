@@ -78,7 +78,7 @@
     "@sentry/core": "7.119.0",
     "@sentry/utils": "7.119.0",
     "@sveltejs/kit": "2.5.22",
-    "@types/node": "20.14.15",
+    "@types/node": "20.15.0",
     "esbuild": "0.22.0",
     "typescript": "5.5.4"
   },
