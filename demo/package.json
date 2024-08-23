@@ -15,7 +15,7 @@
     "@sentry/vite-plugin": "2.22.2",
     "@sveltejs/adapter-cloudflare": "4.7.2",
     "@sveltejs/vite-plugin-svelte": "3.1.2",
-    "svelte": "4.2.18",
+    "svelte": "4.2.19",
     "vite": "5.4.2"
   }
 }
