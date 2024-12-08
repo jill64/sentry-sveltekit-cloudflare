@@ -4,6 +4,6 @@ on: push
 
 jobs:
   e2e-test:
-    uses: jill64/playwright-config/.github/workflows/duplex-playwright.yml@164f3196faa6d87424822469d554d5a1ad7464ac # v2.4.1
+    uses: jill64/playwright-config/.github/workflows/duplex-playwright.yml@33108f25a71d0f30636b531223a62692a9559601 # v2.4.2
     with:
       hosting-provider: cloudflare
