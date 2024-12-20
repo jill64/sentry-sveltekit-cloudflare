@@ -34,18 +34,18 @@ export const handleErrorWithSentry = (
   handleError: HandleClientError = defaultErrorHandler
 ): HandleClientError => {
   return (input: SafeHandleServerErrorInput): ReturnType<HandleClientError> => {
-    // SvelteKit 2.0 offers a reliable way to check for a 404 error:
-    if (input.status !== 404) {
-      captureException(input.error, {
-        mechanism: {
-          type: 'sveltekit',
-          handled: false
-        }
-      })
-    }
+    const result =
+      input.status !== 404
+        ? captureException(input.error, {
+            mechanism: {
+              type: 'sveltekit',
+              handled: false
+            }
+          })
+        : undefined
 
     // We're extra cautious with SafeHandleServerErrorInput - this type is not compatible with HandleServerErrorInput
     // @ts-expect-error - we're still passing the same object, just with a different (backwards-compatible) type
-    return handleError(input)
+    return handleError(input, result)
   }
 }
