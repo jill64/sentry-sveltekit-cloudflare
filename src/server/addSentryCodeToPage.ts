@@ -1,9 +1,4 @@
-import {
-  getActiveTransaction,
-  getDynamicSamplingContextFromSpan,
-  spanToTraceHeader
-} from '@sentry/core'
-import { dynamicSamplingContextToSentryBaggageHeader } from '@sentry/utils'
+import { getTraceMetaTags } from '@sentry/core'
 import type { ResolveOptions } from '@sveltejs/kit'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
 
@@ -34,27 +29,15 @@ export function addSentryCodeToPage(
   const nonce = fetchProxyScriptNonce ? `nonce="${fetchProxyScriptNonce}"` : ''
 
   return ({ html }) => {
-    // eslint-disable-next-line deprecation/deprecation
-    const transaction = getActiveTransaction()
-    if (transaction) {
-      const traceparentData = spanToTraceHeader(transaction)
-      const dynamicSamplingContext =
-        dynamicSamplingContextToSentryBaggageHeader(
-          getDynamicSamplingContextFromSpan(transaction)
-        )
-      const contentMeta = `<head>
-    <meta name="sentry-trace" content="${traceparentData}"/>
-    <meta name="baggage" content="${dynamicSamplingContext}"/>
-    `
-      const contentScript = shouldInjectScript
-        ? `<script ${nonce}>${FETCH_PROXY_SCRIPT}</script>`
-        : ''
+    const metaTags = getTraceMetaTags()
+    const headWithMetaTags = metaTags ? `<head>\n${metaTags}` : '<head>'
 
-      const content = `${contentMeta}\n${contentScript}`
+    const headWithFetchScript = shouldInjectScript
+      ? `\n<script ${nonce}>${FETCH_PROXY_SCRIPT}</script>`
+      : ''
 
-      return html.replace('<head>', content)
-    }
+    const modifiedHead = `${headWithMetaTags}${headWithFetchScript}`
 
-    return html
+    return html.replace('<head>', modifiedHead)
   }
 }
