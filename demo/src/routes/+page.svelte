@@ -1,9 +1,10 @@
 <script lang="ts">
   import { toast } from '@jill64/svelte-toast'
 
-  export let data
+  let { data } = $props()
 
-  $: ({ loadAt, routes } = data)
+  let loadAt = $derived(data.loadAt)
+  let routes = $derived(data.routes)
 </script>
 
 <p>Load at {loadAt} from Server</p>
@@ -15,7 +16,7 @@
   {/each}
 </ul>
 <button
-  on:click={() => {
+  onclick={() => {
     $toast.error('Error from client')
     throw new Error('Error from client')
   }}
@@ -24,14 +25,16 @@
 </button>
 {#each ['POST', 'PUT', 'PATCH', 'DELETE'] as method}
   <button
-    on:click={async () => {
+    onclick={async () => {
       const res = await fetch('/', { method })
 
       const text = await res.text()
 
-      res.ok
-        ? $toast.success(`${res.status} ${text}`)
-        : $toast.error(`${res.status} ${text}`)
+      if (res.ok) {
+        $toast.success(`${res.status} ${text}`)
+      } else {
+        $toast.error(`${res.status} ${text}`)
+      }
     }}
   >
     {method}
