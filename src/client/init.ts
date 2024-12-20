@@ -20,6 +20,7 @@ export const init = (
     tracesSampleRate: 1.0,
     replaysSessionSampleRate: 0.1,
     replaysOnErrorSampleRate: 1.0,
+    // @ts-expect-error Type 'BrowserOptions' is not assignable to type 'InitOptions'.
     integrations: [Sentry.replayIntegration()],
     ...options?.sentryOptions
   })
