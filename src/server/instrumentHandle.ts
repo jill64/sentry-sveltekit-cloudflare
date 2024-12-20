@@ -1,17 +1,20 @@
+import type { Span } from '@sentry/core'
 import {
   SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN,
+  SEMANTIC_ATTRIBUTE_SENTRY_SOURCE,
   getCurrentScope,
+  getDefaultIsolationScope,
+  getIsolationScope,
   setHttpStatus,
-  startSpan
+  startSpan,
+  winterCGRequestToRequestData
 } from '@sentry/core'
 import type { RequestEvent } from '@sveltejs/kit'
 import { Handle } from '@sveltejs/kit'
-import { getTracePropagationData } from './getTracePropagationData.js'
+import { addSentryCodeToPage } from './addSentryCodeToPage.js'
 import type { initSentry } from './initSentry.js'
 import { sendErrorToSentry } from './sendErrorToSentry.js'
 import { SentryHandleOptions } from './types/SentryHandleOptions.js'
-import type { Span } from '@sentry/types'
-import { addSentryCodeToPage } from './addSentryCodeToPage.js'
 
 export const instrumentHandle = async ({
   input: { event, resolve },
@@ -21,36 +24,34 @@ export const instrumentHandle = async ({
   input: Parameters<Handle>[0]
   init: (event: RequestEvent) => ReturnType<typeof initSentry>
   handleOptions?: SentryHandleOptions
-}) => {
+}): Promise<Response> => {
   if (!event.route?.id && !options?.handleUnknownRoutes) {
     return resolve(event)
   }
 
-  const { dynamicSamplingContext, traceparentData, propagationContext } =
-    getTracePropagationData(event)
-  getCurrentScope().setPropagationContext(propagationContext)
+  const routeName = `${event.request.method} ${
+    event.route?.id || event.url.pathname
+  }`
+
+  if (getIsolationScope() !== getDefaultIsolationScope()) {
+    getIsolationScope().setTransactionName(routeName)
+  }
 
   try {
     const resolveResult = await startSpan(
       {
         op: 'http.server',
         attributes: {
-          [SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: 'auto.http.sveltekit'
+          [SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: 'auto.http.sveltekit',
+          [SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: event.route?.id ? 'route' : 'url',
+          'http.method': event.request.method
         },
-        name: `${event.request.method} ${
-          event.route?.id || event.url.pathname
-        }`,
-        status: 'ok',
-        ...traceparentData,
-        metadata: {
-          source: event.route?.id ? 'route' : 'url',
-          dynamicSamplingContext:
-            traceparentData && !dynamicSamplingContext
-              ? {}
-              : dynamicSamplingContext
-        }
+        name: routeName
       },
       async (span?: Span) => {
+        getCurrentScope().setSDKProcessingMetadata({
+          normalizedRequest: winterCGRequestToRequestData(event.request.clone())
+        })
         const res = await resolve(event, {
           transformPageChunk: addSentryCodeToPage(options)
         })
@@ -62,8 +63,7 @@ export const instrumentHandle = async ({
     )
     return resolveResult
   } catch (e: unknown) {
-    const Sentry = init(event)
-    sendErrorToSentry(e, Sentry)
+    sendErrorToSentry(e, 'handle', init(event))
     throw e
   }
 }

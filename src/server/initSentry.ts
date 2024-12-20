@@ -1,6 +1,6 @@
-import { isPrimitive } from '@sentry/utils'
+import { isPrimitive } from '@sentry/core'
 import type { Options } from 'toucan-js'
-import { Toucan, RewriteFrames } from 'toucan-js'
+import { Toucan } from 'toucan-js'
 
 export const initSentry = (
   request: Request,
@@ -22,7 +22,6 @@ export const initSentry = (
       ],
       allowedSearchParams: /(.*)/
     },
-    integrations: [new RewriteFrames({ root: '/' })],
     ...additionalOptions
   })
 
