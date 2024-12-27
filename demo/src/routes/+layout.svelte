@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Toaster } from '@jill64/svelte-toast'
 
-  export let data
+  let { data, children } = $props()
 
-  $: ({ title } = data)
+  let title = $derived(data.title)
 </script>
 
 <Toaster />
@@ -11,7 +11,7 @@
   <title>{title}</title>
 </svelte:head>
 <h1>{title}</h1>
-<slot />
+{@render children()}
 
 <style>
   :global(body) {
