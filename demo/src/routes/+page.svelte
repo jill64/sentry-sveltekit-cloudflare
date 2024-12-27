@@ -17,7 +17,7 @@
 </ul>
 <button
   onclick={() => {
-    $toast.error('Error from client')
+    toast.error('Error from client')
     throw new Error('Error from client')
   }}
 >
@@ -31,9 +31,9 @@
       const text = await res.text()
 
       if (res.ok) {
-        $toast.success(`${res.status} ${text}`)
+        toast.success(`${res.status} ${text}`)
       } else {
-        $toast.error(`${res.status} ${text}`)
+        toast.error(`${res.status} ${text}`)
       }
     }}
   >
