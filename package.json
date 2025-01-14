@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/sentry-sveltekit-cloudflare.git",
-    "image": "https://opengraph.githubassets.com/0b41d73ed2e924c5b87a9bd51bc48d53cd9c6f3e7520c0f6670cc256ffd2a345/jill64/sentry-sveltekit-cloudflare"
+    "image": "https://opengraph.githubassets.com/f2b4660f3e23ab9d642f1849ccc1f42f914d8bec1afdb166fc93d2a9b8950907/jill64/sentry-sveltekit-cloudflare"
   },
   "exports": {
     "./client": {
