@@ -16,6 +16,6 @@
     "@sveltejs/adapter-cloudflare": "5.0.1",
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "svelte": "5.16.2",
-    "vite": "6.0.8"
+    "vite": "6.0.9"
   }
 }
