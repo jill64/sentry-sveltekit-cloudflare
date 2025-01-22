@@ -1,6 +1,6 @@
 {
   "name": "@jill64/sentry-sveltekit-cloudflare",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "♟️ Unofficial Sentry Integration for SvelteKit Cloudflare Adapter",
   "type": "module",
   "main": "dist/index.js",
@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/sentry-sveltekit-cloudflare.git",
-    "image": "https://opengraph.githubassets.com/a6682e7175af42cc0941e0face12cc2c1276121995d44a511c9b6919c69c2b92/jill64/sentry-sveltekit-cloudflare"
+    "image": "https://opengraph.githubassets.com/bd0054e7cc1997f84745855bf188c3f14eb184f37205fa6be1113a4d4e6c6360/jill64/sentry-sveltekit-cloudflare"
   },
   "exports": {
     "./client": {
@@ -74,16 +74,16 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@playwright/test": "1.49.1",
-    "@sentry/types": "8.50.0",
-    "@sentry/core": "8.50.0",
-    "@sentry/utils": "8.50.0",
+    "@sentry/types": "8.51.0",
+    "@sentry/core": "8.51.0",
+    "@sentry/utils": "8.51.0",
     "@sveltejs/kit": "2.12.1",
     "@types/node": "22.10.7",
     "esbuild": "0.24.2",
     "typescript": "5.7.2"
   },
   "dependencies": {
-    "@sentry/svelte": "8.50.0",
+    "@sentry/svelte": "8.51.0",
     "toucan-js": "4.1.0"
   }
 }
