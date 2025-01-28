@@ -51,20 +51,20 @@
   },
   "prettier": "@jill64/prettier-config",
   "scripts": {
-    "dev": "pnpm build:lib && cd demo && pnpm dev",
+    "dev": "npm run build:lib && cd demo && npm run dev",
     "sync": "npx tsx scripts/sync.ts",
-    "build": "pnpm build:lib && pnpm build:demo && npx publint",
-    "build:lib": "pnpm sync && tsc && npx tsx scripts/build.ts",
-    "build:demo": "cd demo && pnpm build",
-    "preview": "pnpm build:lib && cd demo && pnpm preview",
-    "prepack": "pnpm build:lib",
+    "build": "npm run build:lib && npm run build:demo && npx publint",
+    "build:lib": "npm run sync && tsc && npx tsx scripts/build.ts",
+    "build:demo": "cd demo && npm run build",
+    "preview": "npm run build:lib && cd demo && npm run preview",
+    "prepack": "npm run build:lib",
     "test": "playwright test",
-    "lint": "pnpm build:lib && pnpm lint:lib && pnpm lint:demo",
+    "lint": "npm run build:lib && npm run lint:lib && npm run lint:demo",
     "lint:lib": "npx eslint .",
-    "lint:demo": "cd demo && pnpm lint",
-    "format": "pnpm format:lib && pnpm format:demo",
+    "lint:demo": "cd demo && npm run lint",
+    "format": "npm run format:lib && npm run format:demo",
     "format:lib": "npx prettier -w .",
-    "format:demo": "cd demo && pnpm format"
+    "format:demo": "cd demo && npm run format"
   },
   "peerDependencies": {
     "@sveltejs/kit": "1.x || 2.x"
