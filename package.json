@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/sentry-sveltekit-cloudflare.git",
-    "image": "https://opengraph.githubassets.com/6cab95a74ee951156ffa76ac0f2aec1aa2b9bbe35c06d269c7c45c366d9c0cfe/jill64/sentry-sveltekit-cloudflare"
+    "image": "https://opengraph.githubassets.com/c04c049e3af54abdc2d5ce60f61fb973b566d19751a7e77c7eaa691368def7a0/jill64/sentry-sveltekit-cloudflare"
   },
   "exports": {
     "./client": {
@@ -70,7 +70,7 @@
     "@sveltejs/kit": "1.x || 2.x"
   },
   "devDependencies": {
-    "@jill64/eslint-config-ts": "2.0.3",
+    "@jill64/eslint-config-ts": "2.0.4",
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@playwright/test": "1.50.0",
