@@ -19,13 +19,13 @@ importers:
         version: 2.0.4(typescript@5.7.2)
       '@jill64/playwright-config':
         specifier: 2.4.2
-        version: 2.4.2(@playwright/test@1.50.0)
+        version: 2.4.2(@playwright/test@1.50.1)
       '@jill64/prettier-config':
         specifier: 1.0.0
         version: 1.0.0
       '@playwright/test':
-        specifier: 1.50.0
-        version: 1.50.0
+        specifier: 1.50.1
+        version: 1.50.1
       '@sentry/core':
         specifier: 8.51.0
         version: 8.51.0
@@ -903,10 +903,10 @@ packages:
       }
     engines: { node: '>= 8' }
 
-  '@playwright/test@1.50.0':
+  '@playwright/test@1.50.1':
     resolution:
       {
-        integrity: sha512-ZGNXbt+d65EGjBORQHuYKj+XhCewlwpnSd/EDuLPZGSiEWmgOJB5RmMCCYGy5aMfTs9wx61RivfDKi8H/hcMvw==
+        integrity: sha512-Jii3aBg+CEDpgnuDxEp/h7BimHcUTDlpEtce89xEumlJ5ef2hqepZ+PWp1DDpYC/VO9fmWVI1IlEaoI5fK9FXQ==
       }
     engines: { node: '>=18' }
     hasBin: true
@@ -2488,18 +2488,18 @@ packages:
       }
     engines: { node: '>=8.6' }
 
-  playwright-core@1.50.0:
+  playwright-core@1.50.1:
     resolution:
       {
-        integrity: sha512-CXkSSlr4JaZs2tZHI40DsZUN/NIwgaUPsyLuOAaIZp2CyF2sN5MM5NJsyB188lFSSozFxQ5fPT4qM+f0tH/6wQ==
+        integrity: sha512-ra9fsNWayuYumt+NiM069M6OkcRb1FZSK8bgi66AtpFoWkg2+y0bJSNmkFrWhMbEBbVKC/EruAHH3g0zmtwGmQ==
       }
     engines: { node: '>=18' }
     hasBin: true
 
-  playwright@1.50.0:
+  playwright@1.50.1:
     resolution:
       {
-        integrity: sha512-+GinGfGTrd2IfX1TA4N2gNmeIksSb+IAe589ZH+FlmpV3MYTx6+buChGIuDLQwrGNCw2lWibqV50fU510N7S+w==
+        integrity: sha512-G8rwsOQJ63XG6BbKj2w5rHeavFjy5zynBA9zsJMMtBoe/Uf757oG12NXz6e6OirF7RCrTVAKFXbLmn1RbL7Qaw==
       }
     engines: { node: '>=18' }
     hasBin: true
@@ -3496,9 +3496,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@jill64/playwright-config@2.4.2(@playwright/test@1.50.0)':
+  '@jill64/playwright-config@2.4.2(@playwright/test@1.50.1)':
     dependencies:
-      '@playwright/test': 1.50.0
+      '@playwright/test': 1.50.1
 
   '@jill64/prettier-config@1.0.0': {}
 
@@ -3552,9 +3552,9 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@playwright/test@1.50.0':
+  '@playwright/test@1.50.1':
     dependencies:
-      playwright: 1.50.0
+      playwright: 1.50.1
 
   '@polka/url@1.0.0-next.28': {}
 
@@ -4538,11 +4538,11 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  playwright-core@1.50.0: {}
+  playwright-core@1.50.1: {}
 
-  playwright@1.50.0:
+  playwright@1.50.1:
     dependencies:
-      playwright-core: 1.50.0
+      playwright-core: 1.50.1
     optionalDependencies:
       fsevents: 2.3.2
 
