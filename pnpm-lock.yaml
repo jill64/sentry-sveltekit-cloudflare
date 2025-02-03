@@ -60,8 +60,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@sveltejs/adapter-cloudflare':
-        specifier: 5.0.1
-        version: 5.0.1(@sveltejs/kit@2.12.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(wrangler@3.90.0(@cloudflare/workers-types@4.20241112.0))
+        specifier: 5.0.2
+        version: 5.0.2(@sveltejs/kit@2.12.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(wrangler@3.90.0(@cloudflare/workers-types@4.20241112.0))
       '@sveltejs/vite-plugin-svelte':
         specifier: 5.0.3
         version: 5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0))
@@ -1238,10 +1238,10 @@ packages:
       }
     engines: { node: '>= 14' }
 
-  '@sveltejs/adapter-cloudflare@5.0.1':
+  '@sveltejs/adapter-cloudflare@5.0.2':
     resolution:
       {
-        integrity: sha512-3aNqJ7O3aOQvlutsDMtT7Wse1cOPyESlvf161nSGjWITy+Un3H/H+Cv8DS/Ac/vSpM9BT9puw6CpOp6HujgrfA==
+        integrity: sha512-jlNRYFQ5mfmHmBqF79GhbFty/BTU+HZvgaT1uDREQmUcngT5j8yV85pxCOORl1r7rIVd0silRNBD5RJFsU5UUg==
       }
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
@@ -3810,7 +3810,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@sveltejs/adapter-cloudflare@5.0.1(@sveltejs/kit@2.12.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(wrangler@3.90.0(@cloudflare/workers-types@4.20241112.0))':
+  '@sveltejs/adapter-cloudflare@5.0.2(@sveltejs/kit@2.12.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(wrangler@3.90.0(@cloudflare/workers-types@4.20241112.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20241112.0
       '@sveltejs/kit': 2.12.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.13.0))
