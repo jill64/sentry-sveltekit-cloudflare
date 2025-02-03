@@ -15,8 +15,8 @@ importers:
         version: 4.1.0
     devDependencies:
       '@jill64/eslint-config-ts':
-        specifier: 2.0.4
-        version: 2.0.4(typescript@5.7.3)
+        specifier: 2.0.5
+        version: 2.0.5(typescript@5.7.3)
       '@jill64/playwright-config':
         specifier: 2.4.2
         version: 2.4.2(@playwright/test@1.50.1)
@@ -807,10 +807,10 @@ packages:
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
 
-  '@jill64/eslint-config-ts@2.0.4':
+  '@jill64/eslint-config-ts@2.0.5':
     resolution:
       {
-        integrity: sha512-KCDN+uWHlyvGIsZ99pmI4mmdLL2Iru8FwBv6m8v0MaKEXAmSxBmwnQTrt9Tn0naQZ3B4clWqB94HHONqgE0aLQ==
+        integrity: sha512-NXOrwKEcPIBcrwsBhDOJyi1SknDLxegCMJhVqpEebdqOq/hohD17e8UMIb+r6jFXvCDfhot8UzxOPhhp1i3pWA==
       }
 
   '@jill64/playwright-config@2.4.2':
@@ -3562,13 +3562,13 @@ snapshots:
       - ts-node
       - typescript
 
-  '@jill64/eslint-config-ts@2.0.4(typescript@5.7.3)':
+  '@jill64/eslint-config-ts@2.0.5(typescript@5.7.3)':
     dependencies:
       '@eslint/js': 9.19.0
       '@types/eslint': 9.6.1
       '@types/eslint-config-prettier': 6.11.3
-      '@typescript-eslint/eslint-plugin': 8.19.0(@typescript-eslint/parser@8.19.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
-      '@typescript-eslint/parser': 8.19.0(eslint@9.19.0)(typescript@5.7.3)
+      '@typescript-eslint/eslint-plugin': 8.22.0(@typescript-eslint/parser@8.22.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.22.0(eslint@9.19.0)(typescript@5.7.3)
       eslint: 9.19.0
       eslint-config-prettier: 10.0.1(eslint@9.19.0)
     transitivePeerDependencies:
