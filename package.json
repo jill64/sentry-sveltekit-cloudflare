@@ -79,7 +79,7 @@
     "@sentry/utils": "8.51.0",
     "@sveltejs/kit": "2.12.1",
     "@types/node": "22.10.10",
-    "esbuild": "0.24.2",
+    "esbuild": "0.25.0",
     "typescript": "5.7.3"
   },
   "dependencies": {
